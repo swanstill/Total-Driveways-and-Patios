@@ -82,7 +82,6 @@ export default function QuoteFormSection() {
       prevValues.current = "";
       setTimeout(() => {
         setStep(next);
-        document.getElementById("quote-form-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 300);
     },
     [setValue],
@@ -113,7 +112,6 @@ export default function QuoteFormSection() {
     if (allFilled && step < TOTAL_STEPS - 1) {
       const timer = setTimeout(() => {
         setStep((s) => Math.min(s + 1, TOTAL_STEPS - 1));
-        document.getElementById("quote-form-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 400);
       return () => clearTimeout(timer);
     }

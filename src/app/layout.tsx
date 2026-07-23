@@ -46,7 +46,7 @@ export default function RootLayout({
       lang="en"
       className={`${sora.variable} ${inter.variable} ${manrope.variable} ${playfairDisplay.variable}`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col overflow-x-hidden">{children}</body>
     </html>
   );
 }

@@ -35,7 +35,7 @@ export default function Header() {
               alt="Total Driveways and Patios"
               width={200}
               height={200}
-              className="w-[200px] h-[200px] object-contain -my-[55px]"
+              className="w-[140px] sm:w-[200px] h-[140px] sm:h-[200px] object-contain -my-[35px] sm:-my-[55px]"
               priority
             />
           </a>
