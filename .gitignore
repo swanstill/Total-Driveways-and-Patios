@@ -42,3 +42,6 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# duplicate Next.js project (root level is canonical)
+/total-driveways/
