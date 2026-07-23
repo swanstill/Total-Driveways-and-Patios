@@ -21,11 +21,11 @@ export default function Home() {
         <Services />
         <WhyChooseUs />
         <Gallery />
+        <QuoteFormSection />
         <Process />
         <CoverageAreaSection />
         <Reviews />
         <FAQ />
-        <QuoteFormSection />
         <FinalCTA />
       </main>
       <Footer />

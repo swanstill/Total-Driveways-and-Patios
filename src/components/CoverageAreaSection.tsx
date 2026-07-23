@@ -160,20 +160,20 @@ function StatCard({
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
       transition={{ duration: 0.5, delay, ease: [0.25, 0.1, 0.25, 1] }}
       whileHover={{ y: -6 }}
-      className="bg-white rounded-[16px] shadow-[0_8px_24px_-8px_rgba(15,39,71,0.10)] p-7 flex flex-col gap-3 transition-shadow duration-300 hover:shadow-[0_16px_40px_-12px_rgba(15,39,71,0.20)]"
+      className="bg-white rounded-[16px] shadow-[0_8px_24px_-8px_rgba(15,39,71,0.10)] p-5 flex flex-col gap-2 transition-shadow duration-300 hover:shadow-[0_16px_40px_-12px_rgba(15,39,71,0.20)]"
     >
-      <div className="w-[42px] h-[42px] rounded-full bg-[#C89B4A]/10 flex items-center justify-center group-hover:bg-[#C89B4A]/20 transition-colors duration-300">
-        <Icon className="w-[22px] h-[22px] text-[#C89B4A]" strokeWidth={1.5} />
+      <div className="w-[32px] h-[32px] rounded-full bg-[#C89B4A]/10 flex items-center justify-center group-hover:bg-[#C89B4A]/20 transition-colors duration-300">
+        <Icon className="w-[16px] h-[16px] text-[#C89B4A]" strokeWidth={1.5} />
       </div>
       <div>
-        <div className="font-[var(--font-manrope)] font-extrabold text-[#0F2747] text-[clamp(24px,2vw,30px)] leading-none">
+        <div className="font-[var(--font-manrope)] font-extrabold text-[#0F2747] text-[clamp(18px,1.5vw,22px)] leading-none">
           <AnimatedNumber
             value={value}
             suffix={suffix}
             isInView={isInView}
           />
         </div>
-        <div className="font-[var(--font-manrope)] text-[#5B6574] text-[13px] font-medium mt-1">
+        <div className="font-[var(--font-manrope)] text-[#5B6574] text-[12px] font-medium mt-0.5">
           {label}
         </div>
       </div>
@@ -194,7 +194,7 @@ function CoverageMap({
   const cy = 260;
 
   return (
-    <div className="relative w-full h-[340px] md:h-[430px] lg:h-[550px] rounded-[24px] overflow-hidden shadow-[0_12px_32px_-12px_rgba(15,39,71,0.10)] bg-[#F0EBE1]">
+    <div className="relative w-full h-full min-h-[200px] rounded-[24px] overflow-hidden shadow-[0_12px_32px_-12px_rgba(15,39,71,0.10)] bg-[#F0EBE1]">
       <svg
         viewBox="0 0 600 500"
         className="w-full h-full"
@@ -460,15 +460,15 @@ function CoverageListCard({ isInView }: { isInView: boolean }) {
       initial={{ opacity: 0, y: 25 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 25 }}
       transition={{ duration: 0.5, delay: 0.15, ease: [0.25, 0.1, 0.25, 1] }}
-      className="bg-white rounded-[20px] shadow-[0_8px_24px_-8px_rgba(15,39,71,0.10)] p-8"
+      className="bg-white rounded-[20px] shadow-[0_8px_24px_-8px_rgba(15,39,71,0.10)] p-8 flex flex-col h-[490px]"
     >
       <h3 className="font-[var(--font-manrope)] font-extrabold text-[#0F2747] text-[22px] mb-1">
         Areas We Cover
       </h3>
-      <div className="w-full h-px bg-[#E8E8E8] my-4" />
+      <div className="w-full h-px bg-[#E8E8E8] my-4 flex-shrink-0" />
 
       {/* Search */}
-      <div className="relative mb-4">
+      <div className="relative mb-4 flex-shrink-0">
         <Search
           className="absolute left-3.5 top-1/2 -translate-y-1/2 w-[16px] h-[16px] text-[#5B6574] pointer-events-none"
           strokeWidth={1.5}
@@ -500,7 +500,7 @@ function CoverageListCard({ isInView }: { isInView: boolean }) {
       </div>
 
       {/* Area list */}
-      <div className="space-y-1 max-h-[300px] overflow-y-auto pr-1">
+      <div className="space-y-1 overflow-y-auto pr-1 flex-1">
         {filtered.length === 0 ? (
           <p className="text-[#5B6574] text-[14px] py-3 text-center">
             No areas found
@@ -711,7 +711,7 @@ function CoverageCheckerCard({ isInView }: { isInView: boolean }) {
           type="button"
           onClick={handleCheck}
           disabled={status === "validating" || !postcode.trim()}
-          className="w-full h-[52px] inline-flex items-center justify-center gap-2.5 rounded-[16px] bg-[#0F2747] text-white text-[15px] font-bold transition-all duration-300 hover:bg-[#C89B4A] shadow-[0_4px_16px_-4px_rgba(15,39,71,0.30)] disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full btn btn-primary !justify-center !py-[12px] !px-[18px] !text-sm !rounded-md"
         >
           {status === "validating" ? (
             <>
@@ -732,7 +732,7 @@ function CoverageCheckerCard({ isInView }: { isInView: boolean }) {
         {/* Phone button */}
         <a
           href="tel:07722151231"
-          className="mt-3 w-full h-[52px] inline-flex items-center justify-center gap-2.5 rounded-[16px] border-2 border-[#0F2747] text-[#0F2747] text-[15px] font-bold transition-all duration-300 hover:bg-[#0F2747] hover:text-white"
+          className="mt-3 w-full btn btn-outline !justify-center !py-[12px] !px-[18px] !text-sm !rounded-md"
         >
           <Phone className="w-[18px] h-[18px]" strokeWidth={1.5} />
           Call 07722 151231
@@ -761,10 +761,10 @@ export default function CoverageAreaSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
-          className="lg:grid lg:grid-cols-[65%_35%] lg:gap-[40px]"
+          className="lg:grid lg:grid-cols-[70%_30%] lg:gap-[40px]"
         >
-          {/* ═══════════════ Left Column (65%) ═══════════════ */}
-          <div>
+          {/* ═══════════════ Left Column ═══════════════ */}
+          <div className="flex flex-col h-full">
             {/* Label */}
             <motion.span
               initial={{ opacity: 0, y: 10 }}
@@ -803,7 +803,7 @@ export default function CoverageAreaSection() {
             </motion.p>
 
             {/* Stats Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-[20px] mb-10">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-[16px] mb-8">
               {STATS_DATA.map((stat, i) => (
                 <StatCard
                   key={stat.label}
@@ -830,17 +830,22 @@ export default function CoverageAreaSection() {
                 delay: 0.2,
                 ease: [0.25, 0.1, 0.25, 1],
               }}
+              className="h-[365px]"
             >
-              <CoverageMap
-                hoveredMarker={hoveredMarker}
-                setHoveredMarker={setHoveredMarker}
-              />
+              <div className="h-full">
+                <CoverageMap
+                  hoveredMarker={hoveredMarker}
+                  setHoveredMarker={setHoveredMarker}
+                />
+              </div>
             </motion.div>
           </div>
 
           {/* ═══════════════ Right Column (35%) ═══════════════ */}
-          <div className="flex flex-col gap-[24px] mt-10 lg:mt-0">
-            <CoverageListCard isInView={isInView} />
+          <div className="flex flex-col gap-[24px] mt-10 lg:mt-0 h-full">
+            <div>
+              <CoverageListCard isInView={isInView} />
+            </div>
             <CoverageCheckerCard isInView={isInView} />
           </div>
         </motion.div>

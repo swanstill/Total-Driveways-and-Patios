@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="footer-bg text-[#B7BECF] pt-16 pb-7 mt-16">
+    <footer id="contact" className="footer-bg text-[#B7BECF] pt-16 pb-7">
       <div className="wrap">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10 mb-12">
           <div>
@@ -10,16 +10,10 @@ export default function Footer() {
               <Image
                 src="/logo.png"
                 alt="Total Driveways and Patios"
-                width={38}
-                height={38}
-                className="w-[38px] h-[38px] object-contain"
+                width={150}
+                height={150}
+                className="w-[150px] h-[150px] object-contain -my-[30px]"
               />
-              <span className="font-heading font-extrabold text-white text-[17px] leading-[1.15]">
-                TOTAL DRIVEWAYS
-                <small className="block font-body font-semibold tracking-[.16em] text-[9.5px] text-gold mt-[2px]">
-                  AND PATIOS
-                </small>
-              </span>
             </div>
             <p className="max-w-[32ch] text-sm leading-relaxed">
               Family-run driveway, patio and landscaping specialists serving Cardiff and South Wales since 1990.

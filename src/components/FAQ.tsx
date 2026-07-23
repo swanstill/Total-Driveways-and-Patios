@@ -45,7 +45,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="!bg-white">
+    <section className="!bg-cream">
       <div className="wrap">
         <div className="max-w-[640px] mx-auto text-center mb-14">
           <span className="eyebrow">Frequently asked questions</span>

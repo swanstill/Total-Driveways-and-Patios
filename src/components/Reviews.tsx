@@ -21,7 +21,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section id="reviews">
+    <section id="reviews" className="bg-white">
       <div className="wrap">
         <div className="max-w-[640px] mx-auto text-center mb-14">
           <span className="eyebrow">Customer reviews</span>

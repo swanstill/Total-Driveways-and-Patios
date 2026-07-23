@@ -33,9 +33,9 @@ export default function Header() {
             <Image
               src="/logo.png"
               alt="Total Driveways and Patios"
-              width={150}
-              height={150}
-              className="w-[150px] h-[150px] object-contain -my-[30px]"
+              width={200}
+              height={200}
+              className="w-[200px] h-[200px] object-contain -my-[55px]"
               priority
             />
           </a>

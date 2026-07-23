@@ -7,7 +7,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <section>
+    <section className="bg-white">
       <div className="wrap">
         <div className="max-w-[640px] mx-auto text-center mb-14">
           <span className="eyebrow">Our process</span>

@@ -7,7 +7,6 @@ export default function WhyChooseUs() {
           <h2 className="text-[clamp(28px,3vw,38px)] mb-[18px]">
             A trusted driveway and patio company<span className="dot">.</span>
           </h2>
-          <p>At Total Driveways and Patios, we take pride in delivering dependable workmanship, tidy installations and honest advice to create outdoor spaces you&apos;ll enjoy for years to come.</p>
           <div className="mt-7 space-y-[30px]">
             {[
               {
@@ -69,15 +68,17 @@ export default function WhyChooseUs() {
               </div>
             ))}
           </div>
-          <a href="#quote" className="btn btn-primary mt-2">
+          <a href="#quote" className="btn btn-primary mt-8">
             Get a free quote
             <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="w-[17px] h-[17px] flex-shrink-0">
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
             </svg>
           </a>
         </div>
-        <div className="aspect-[4/3.6] rounded-[20px] overflow-hidden shadow-card relative lg:order-first">
-          <div className="swatch-resin w-full h-full" />
+        <div className="flex flex-col gap-4">
+          <p>At Total Driveways and Patios, we take pride in delivering dependable workmanship, tidy installations and honest advice to create outdoor spaces you&apos;ll enjoy for years to come.</p>
+          <div className="aspect-[4/3.6] rounded-[20px] overflow-hidden shadow-card relative">
+          <img src="/why-choose-us.jpg" alt="Why Choose Total Driveways and Patios" className="w-full h-full object-cover" />
           <div className="absolute left-5 bottom-5 bg-white py-[14px] px-[18px] rounded-[14px] shadow-[0_10px_20px_-8px_rgba(0,0,0,.18)] flex items-center gap-3">
             <svg className="w-[26px] h-[26px] text-gold-dark flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c3 3 3 6 0 9-3-3-3-6 0-9zM12 12v9M8 21h8" />
@@ -87,6 +88,7 @@ export default function WhyChooseUs() {
               <br />
               <span className="text-[13.5px] text-slate font-normal">Driveways · Patios · Landscaping</span>
             </div>
+          </div>
           </div>
         </div>
       </div>

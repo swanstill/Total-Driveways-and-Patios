@@ -156,7 +156,7 @@ export default function QuoteFormSection() {
   /* ── Success state ── */
   if (submitted) {
     return (
-      <section id="quote-form-section" className="bg-white py-24">
+      <section id="quote-form-section" className="bg-cream py-24">
         <div className="mx-auto max-w-[1320px] px-8">
           <div className="max-w-[640px] mx-auto text-center">
             <motion.div
@@ -212,7 +212,7 @@ export default function QuoteFormSection() {
 
   /* ── Main section ── */
   return (
-    <section id="quote-form-section" className="bg-white py-16 lg:py-[60px] overflow-visible">
+    <section id="quote-form-section" className="bg-cream py-16 lg:py-[60px] overflow-visible">
       <div className="mx-auto max-w-[1320px] px-8">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
