@@ -1,0 +1,244 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #F6F3EC;
+  --color-white: #FFFFFF;
+  --color-navy: #162447;
+  --color-navy-soft: #28345A;
+  --color-slate: #5B6270;
+  --color-gold: #C79A3C;
+  --color-gold-dark: #A67C2E;
+  --color-umber: #5B4130;
+  --color-border: #E7E2D6;
+
+  --font-heading: var(--font-sora);
+  --font-body: var(--font-inter);
+
+  --radius-sm: 12px;
+  --radius-lg: 20px;
+  --shadow-card: 0 12px 32px -12px rgba(22, 36, 71, 0.16);
+  --shadow-card-hover: 0 20px 40px -14px rgba(22, 36, 71, 0.24);
+}
+
+/* ===== Base ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body), system-ui, sans-serif;
+  color: var(--color-slate);
+  background: var(--color-cream);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading), sans-serif;
+  color: var(--color-navy);
+  line-height: 1.14;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding-bottom: 70px;
+  }
+}
+
+/* ===== Wrapper ===== */
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== Eyebrow ===== */
+.eyebrow {
+  display: inline-block;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  margin-bottom: 14px;
+}
+
+/* ===== Gold dot ===== */
+.dot {
+  color: var(--color-gold);
+}
+
+/* ===== Section padding ===== */
+section {
+  padding: 96px 0;
+}
+
+@media (max-width: 860px) {
+  section {
+    padding: 56px 0;
+  }
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 15.5px;
+  padding: 15px 26px;
+  border-radius: var(--radius-sm);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--color-gold);
+  color: #fff;
+  box-shadow: 0 10px 22px -8px rgba(199, 154, 60, 0.55);
+}
+
+.btn-primary:hover {
+  background: var(--color-gold-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: var(--color-navy);
+  color: var(--color-navy);
+}
+
+.btn-outline:hover {
+  background: var(--color-navy);
+  color: #fff;
+}
+
+.btn-ghost-white {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.btn-ghost-white:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.btn svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+/* ===== Swatch patterns ===== */
+.swatch-block {
+  background:
+    repeating-linear-gradient(90deg, #B08D57 0 26px, #9A784A 26px 28px),
+    repeating-linear-gradient(0deg, transparent 0 44px, rgba(0,0,0,.06) 44px 46px);
+  background-blend-mode: multiply;
+}
+
+.swatch-resin {
+  background: #C8B48A;
+  background-image:
+    radial-gradient(circle at 15% 30%, rgba(255,255,255,.5) 0 2px, transparent 3px),
+    radial-gradient(circle at 55% 70%, rgba(90,70,40,.35) 0 2px, transparent 3px),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,.4) 0 2px, transparent 3px),
+    radial-gradient(circle at 35% 55%, rgba(90,70,40,.3) 0 2px, transparent 3px),
+    radial-gradient(circle at 70% 80%, rgba(255,255,255,.45) 0 2px, transparent 3px);
+  background-size: 26px 26px;
+}
+
+.swatch-tarmac {
+  background: #333A46;
+  background-image: radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 9px 9px;
+}
+
+.swatch-patio {
+  background: #B9B2A3;
+  background-image:
+    linear-gradient(rgba(0,0,0,.12) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(0,0,0,.12) 2px, transparent 2px);
+  background-size: 64px 64px;
+}
+
+.swatch-landscape {
+  background: linear-gradient(180deg, #7C9A5C 0%, #5E7B45 100%);
+}
+
+/* ===== Nav active link ===== */
+.active-link {
+  position: relative;
+  color: var(--color-navy);
+}
+
+.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 2px;
+  background: var(--color-gold);
+  border-radius: 2px;
+}
+
+/* ===== Mobile drawer ===== */
+.mobile-drawer {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 24, 48, 0.5);
+  z-index: 80;
+  display: none;
+}
+
+.mobile-drawer.open {
+  display: block;
+}
+
+.mobile-drawer .panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 78%;
+  max-width: 320px;
+  background: #fff;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.mobile-drawer .panel a {
+  font-weight: 700;
+  color: var(--color-navy);
+  font-size: 17px;
+}
+
+/* ===== Final CTA overlay ===== */
+.final-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(199, 154, 60, 0.18), transparent 55%);
+}
+
+/* ===== Footer ===== */
+.footer-bg {
+  background: #101B33;
+}
+
+/* ===== Z-index utilities ===== */
+.z-60 {
+  z-index: 60;
+}
