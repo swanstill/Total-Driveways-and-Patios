@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Sora, Inter, Manrope } from "next/font/google";
+import { Sora, Inter, Manrope, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const sora = Sora({
@@ -23,6 +23,13 @@ const manrope = Manrope({
   variable: "--font-manrope",
 });
 
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["500", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-playfair-display",
+});
+
 export const metadata: Metadata = {
   title: "Total Driveways and Patios | Driveways, Patios & Landscaping",
   description:
@@ -37,7 +44,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${sora.variable} ${inter.variable} ${manrope.variable}`}
+      className={`${sora.variable} ${inter.variable} ${manrope.variable} ${playfairDisplay.variable}`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
