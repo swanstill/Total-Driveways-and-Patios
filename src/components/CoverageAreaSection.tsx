@@ -196,7 +196,7 @@ function CoverageMap({
   return (
     <div className="relative w-full h-full min-h-[200px] rounded-[24px] overflow-hidden shadow-[0_12px_32px_-12px_rgba(15,39,71,0.10)] bg-[#F0EBE1]">
       <svg
-        viewBox="0 0 600 500"
+        viewBox="40 80 520 380"
         className="w-full h-full"
         preserveAspectRatio="xMidYMid meet"
         role="img"

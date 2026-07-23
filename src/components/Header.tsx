@@ -10,7 +10,7 @@ export default function Header() {
     <>
       {/* Utility Bar */}
       <div className="bg-navy text-[#EDE7D8] text-[13.5px]">
-        <div className="wrap flex justify-between items-center py-[9px] gap-4 flex-wrap">
+        <div className="wrap flex justify-between items-center py-[15px] gap-4 flex-wrap">
           <a href="tel:07722151231" className="flex items-center gap-2 font-semibold">
             <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="w-[15px] h-[15px]">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.2 3.6a1 1 0 01-.27 1.05L7.7 9.79a11 11 0 006.5 6.5l1.46-1.46a1 1 0 011.05-.27l3.6 1.2a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.61 21 3 14.39 3 6V5z" />
