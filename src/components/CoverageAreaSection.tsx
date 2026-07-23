@@ -52,7 +52,7 @@ function IllustratedMap() {
   const cy = 260; // Cardiff centre
 
   return (
-    <div className="relative w-full h-full min-h-[320px] md:min-h-[380px] lg:min-h-[500px] rounded-[12px] overflow-hidden shadow-[0_12px_32px_-12px_rgba(27,42,74,0.10)] bg-[#EDE7DA]">
+    <div className="relative w-full h-full min-h-[320px] md:min-h-[360px] lg:min-h-[420px] rounded-[12px] overflow-hidden shadow-[0_12px_32px_-12px_rgba(27,42,74,0.10)] bg-[#EDE7DA]">
       <svg
         viewBox="0 0 600 500"
         className="w-full h-full"
@@ -281,13 +281,13 @@ function StatCard({
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="flex flex-col items-center text-center gap-2"
     >
-      <div className="w-10 h-10 rounded-full border-2 border-[#C9975A]/30 flex items-center justify-center">
-        <Icon className="w-5 h-5 text-[#C9975A]" strokeWidth={1.5} />
+      <div className="w-9 h-9 rounded-full border-2 border-[#C9975A]/30 flex items-center justify-center">
+        <Icon className="w-[18px] h-[18px] text-[#C9975A]" strokeWidth={1.5} />
       </div>
-      <div className="font-bold text-[#1B2A4A] text-[clamp(20px,1.6vw,26px)] leading-none">
+      <div className="font-bold text-[#1B2A4A] text-[clamp(17px,1.3vw,22px)] leading-none">
         {value}
       </div>
-      <div className="text-[#6B7280] text-[11.5px] font-medium leading-tight">
+      <div className="text-[#6B7280] text-[10.5px] font-medium leading-tight">
         {label}
       </div>
     </motion.div>
@@ -309,14 +309,14 @@ export default function CoverageAreaSection() {
       aria-labelledby="coverage-heading"
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-        {/* ── 12-column grid ── */}
-        <div className="lg:grid lg:grid-cols-12 lg:gap-8 xl:gap-10">
-          {/* ════════════ Col 1 · Text + Stats (4 fr) ════════════ */}
+        {/* ── 4-column grid (25% each) ── */}
+        <div className="lg:grid lg:grid-cols-4 lg:gap-6 xl:gap-8 items-start">
+          {/* ════════════ Col 1 · Text + Stats ════════════ */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.6, delay: 0, ease }}
-            className="lg:col-span-4 mb-10 lg:mb-0"
+            className="lg:col-span-1 mb-10 lg:mb-0"
           >
             {/* Eyebrow */}
             <span className="block text-[#C9975A] text-[12.5px] font-bold tracking-[0.2em] uppercase mb-4">
@@ -326,7 +326,7 @@ export default function CoverageAreaSection() {
             {/* Two-tone H2 — serif display */}
             <h2
               id="coverage-heading"
-              className="font-[var(--font-playfair-display)] text-[#1B2A4A] text-[clamp(30px,3.6vw,44px)] font-bold leading-[1.15] tracking-[-0.01em]"
+              className="font-[var(--font-playfair-display)] text-[#1B2A4A] text-[clamp(22px,2.2vw,32px)] font-bold leading-[1.2] tracking-[-0.01em]"
             >
               Trusted Driveway &amp; Patio Services
               <br />
@@ -334,18 +334,16 @@ export default function CoverageAreaSection() {
             </h2>
 
             {/* Gold divider */}
-            <div className="w-10 h-[3px] bg-[#C9975A] mt-5 mb-4" />
+            <div className="w-8 h-[3px] bg-[#C9975A] mt-4 mb-3" />
 
             {/* Paragraph */}
-            <p className="text-[#6B7280] text-[clamp(14px,1vw,16px)] leading-relaxed max-w-[480px] mb-8">
+            <p className="text-[#6B7280] text-[clamp(13px,0.85vw,14.5px)] leading-relaxed mb-6">
               Total Driveways and Patios provides professional driveway, patio
               and landscaping services throughout Cardiff and nearby locations.
-              If you&apos;re just outside our normal service area, contact us and
-              we&apos;ll happily confirm availability.
             </p>
 
             {/* 3-up stat cards (flat, on background) */}
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-3">
               {STATS.map((stat) => (
                 <StatCard
                   key={stat.label}
@@ -358,7 +356,7 @@ export default function CoverageAreaSection() {
             </div>
           </motion.div>
 
-          {/* ════════════ Col 2 · Illustrated Map (4 fr) ════════════ */}
+          {/* ════════════ Col 2 · Illustrated Map ════════════ */}
           <motion.div
             initial={{ scale: 0.95, opacity: 0 }}
             animate={
@@ -367,42 +365,41 @@ export default function CoverageAreaSection() {
                 : { scale: 0.95, opacity: 0 }
             }
             transition={{ duration: 0.7, delay: 0.1, ease }}
-            className="lg:col-span-4 mb-8 lg:mb-0"
+            className="lg:col-span-1 mb-8 lg:mb-0"
           >
             <IllustratedMap />
           </motion.div>
 
-          {/* ════════════ Col 3 · Cards (4 fr, split) ════════════ */}
-          <div className="lg:col-span-4 flex flex-col gap-6">
-            {/* ── Card A — "Areas We Cover" ── */}
-            <motion.div
-              initial={{ x: 25, opacity: 0 }}
-              animate={
-                isInView ? { x: 0, opacity: 1 } : { x: 25, opacity: 0 }
-              }
-              transition={{ duration: 0.5, delay: 0.2, ease }}
-              className="bg-white rounded-[12px] shadow-[0_8px_24px_-8px_rgba(27,42,74,0.10)] p-6"
-            >
-              <h3 className="font-semibold text-[#1B2A4A] text-[20px] mb-4">
+          {/* ════════════ Col 3 · Areas We Cover ════════════ */}
+          <motion.div
+            initial={{ y: 25, opacity: 0 }}
+            animate={
+              isInView ? { y: 0, opacity: 1 } : { y: 25, opacity: 0 }
+            }
+            transition={{ duration: 0.5, delay: 0.2, ease }}
+            className="lg:col-span-1 mb-6 lg:mb-0"
+          >
+            <div className="bg-white rounded-[12px] shadow-[0_8px_24px_-8px_rgba(27,42,74,0.10)] p-5 h-full">
+              <h3 className="font-semibold text-[#1B2A4A] text-[18px] mb-4">
                 Areas We Cover
               </h3>
-              <div className="space-y-3 max-h-[280px] overflow-y-auto pr-1 scrollbar-thin">
+              <div className="space-y-2.5 max-h-[320px] overflow-y-auto pr-1">
                 {AREA_NAMES.map((name) => (
                   <div
                     key={name}
                     className="flex items-center justify-between group"
                   >
-                    <div className="flex items-center gap-2.5">
+                    <div className="flex items-center gap-2">
                       <MapPin
-                        className="w-[14px] h-[14px] text-[#C9975A] shrink-0"
+                        className="w-[13px] h-[13px] text-[#C9975A] shrink-0"
                         strokeWidth={1.5}
                       />
-                      <span className="text-[#1B2A4A] text-[14px] font-medium">
+                      <span className="text-[#1B2A4A] text-[13px] font-medium">
                         {name}
                       </span>
                     </div>
                     <CheckCircle
-                      className="w-[15px] h-[15px] text-[#C9975A] shrink-0 opacity-60"
+                      className="w-[14px] h-[14px] text-[#C9975A] shrink-0 opacity-60"
                       strokeWidth={1.5}
                     />
                   </div>
@@ -410,43 +407,45 @@ export default function CoverageAreaSection() {
               </div>
               <button
                 type="button"
-                className="mt-4 pt-3.5 border-t border-[#EDE7DA] w-full text-left text-[#C9975A] text-[14px] font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+                className="mt-3.5 pt-3 border-t border-[#EDE7DA] w-full text-left text-[#C9975A] text-[13px] font-semibold flex items-center gap-2 hover:gap-3 transition-all"
               >
-                <Navigation className="w-[14px] h-[14px]" strokeWidth={1.5} />
+                <Navigation className="w-[13px] h-[13px]" strokeWidth={1.5} />
                 + More Surrounding Areas
               </button>
-            </motion.div>
+            </div>
+          </motion.div>
 
-            {/* ── Card B — "Not sure?" CTA ── */}
-            <motion.div
-              initial={{ y: 25, opacity: 0 }}
-              animate={
-                isInView ? { y: 0, opacity: 1 } : { y: 25, opacity: 0 }
-              }
-              transition={{ duration: 0.5, delay: 0.3, ease }}
-              className="bg-white rounded-[12px] shadow-[0_8px_24px_-8px_rgba(27,42,74,0.10)] overflow-hidden"
-            >
+          {/* ════════════ Col 4 · CTA ════════════ */}
+          <motion.div
+            initial={{ y: 25, opacity: 0 }}
+            animate={
+              isInView ? { y: 0, opacity: 1 } : { y: 25, opacity: 0 }
+            }
+            transition={{ duration: 0.5, delay: 0.3, ease }}
+            className="lg:col-span-1"
+          >
+            <div className="bg-white rounded-[12px] shadow-[0_8px_24px_-8px_rgba(27,42,74,0.10)] overflow-hidden">
               {/* Gold accent bar (top) */}
               <div className="h-[5px] bg-[#C9975A] w-full" />
 
-              <div className="p-6">
-                <h3 className="font-semibold text-[#1B2A4A] text-[20px] leading-snug mb-1.5">
+              <div className="p-5">
+                <h3 className="font-semibold text-[#1B2A4A] text-[18px] leading-snug mb-1.5">
                   Not sure we cover your area?
                 </h3>
-                <p className="text-[#6B7280] text-[14px] mb-5">
+                <p className="text-[#6B7280] text-[13px] mb-4">
                   Enter your postcode and we&apos;ll confirm availability.
                 </p>
 
                 {/* Postcode input */}
                 <div className="relative mb-3">
                   <MapPin
-                    className="absolute left-3.5 top-1/2 -translate-y-1/2 w-[18px] h-[18px] text-[#B0A89B] pointer-events-none"
+                    className="absolute left-3.5 top-1/2 -translate-y-1/2 w-[16px] h-[16px] text-[#B0A89B] pointer-events-none"
                     strokeWidth={1.5}
                   />
                   <input
                     type="text"
                     placeholder="Enter your postcode"
-                    className="w-full h-[48px] pl-10 pr-4 rounded-[10px] border border-[#E0DCD0] bg-white text-[#1B2A4A] text-[14px] font-medium placeholder:text-[#B0A89B] outline-none transition-all duration-200 focus:border-[#C9975A] focus:ring-2 focus:ring-[#C9975A]/20"
+                    className="w-full h-[44px] pl-9 pr-4 rounded-[10px] border border-[#E0DCD0] bg-white text-[#1B2A4A] text-[13px] font-medium placeholder:text-[#B0A89B] outline-none transition-all duration-200 focus:border-[#C9975A] focus:ring-2 focus:ring-[#C9975A]/20"
                     autoComplete="postal-code"
                   />
                 </div>
@@ -454,11 +453,11 @@ export default function CoverageAreaSection() {
                 {/* Primary CTA button (navy fill) */}
                 <button
                   type="submit"
-                  className="w-full h-[48px] inline-flex items-center justify-center gap-2 rounded-[10px] bg-[#1B2A4A] text-white text-[14px] font-semibold transition-all duration-200 hover:bg-[#283A5A] shadow-[0_4px_12px_-4px_rgba(27,42,74,0.30)] mb-3"
+                  className="w-full h-[44px] inline-flex items-center justify-center gap-2 rounded-[10px] bg-[#1B2A4A] text-white text-[13px] font-semibold transition-all duration-200 hover:bg-[#283A5A] shadow-[0_4px_12px_-4px_rgba(27,42,74,0.30)] mb-2.5"
                 >
                   Check Coverage
                   <ArrowRight
-                    className="w-[16px] h-[16px]"
+                    className="w-[15px] h-[15px]"
                     strokeWidth={1.5}
                   />
                 </button>
@@ -466,17 +465,17 @@ export default function CoverageAreaSection() {
                 {/* Secondary phone button (outlined) */}
                 <a
                   href="tel:07722151231"
-                  className="w-full h-[48px] inline-flex items-center justify-center gap-2 rounded-[10px] border-2 border-[#1B2A4A] text-[#1B2A4A] text-[14px] font-semibold transition-all duration-200 hover:bg-[#1B2A4A] hover:text-white"
+                  className="w-full h-[44px] inline-flex items-center justify-center gap-2 rounded-[10px] border-2 border-[#1B2A4A] text-[#1B2A4A] text-[13px] font-semibold transition-all duration-200 hover:bg-[#1B2A4A] hover:text-white"
                 >
                   <Phone
-                    className="w-[16px] h-[16px]"
+                    className="w-[15px] h-[15px]"
                     strokeWidth={1.5}
                   />
                   Call 07722 151231
                 </a>
               </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
