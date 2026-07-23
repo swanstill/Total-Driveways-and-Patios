@@ -5,27 +5,35 @@ import { useState } from "react";
 const faqs = [
   {
     q: "How much does a new driveway or patio cost?",
-    a: "Every project is priced individually because cost depends on the area, existing surface, excavation, access, material, drainage, edging and any additional landscaping. A site visit lets us measure properly and give a clear quotation rather than a misleading one-size-fits-all figure.",
+    a: "Every project is priced individually because the cost depends on the area, existing surface, excavation, access, material, drainage, edging and any additional landscaping. A site visit allows the business to measure properly and provide a clear quotation rather than a misleading one-size-fits-all figure.",
   },
   {
     q: "Which driveway surface is best?",
-    a: "There's no single best surface for every property. Block paving offers design flexibility and easy repairs. Resin gives a smooth decorative finish. Tarmac is practical and cost-effective for larger areas. The right choice depends on appearance, budget, traffic, maintenance and the condition of the base.",
+    a: "There is no single best surface for every property. Block paving offers design flexibility and straightforward local repairs. Resin provides a smooth decorative finish. Tarmac is practical and often cost-effective for larger areas. The right choice depends on appearance, budget, traffic, maintenance and the condition of the base.",
   },
   {
     q: "Do you remove the existing driveway or patio?",
-    a: "Where removal is needed, it's included within the agreed scope. Your quotation will explain what's being excavated, how spoil is removed, and whether any existing base can safely be retained.",
+    a: "Where removal is needed, it should be included within the agreed scope. The quotation should explain what is being excavated, how spoil will be removed and whether any existing base can safely be retained.",
   },
   {
     q: "How long does installation take?",
-    a: "Timescales vary with size, access, preparation, complexity and weather. A straightforward domestic project may take several working days, while larger landscaping schemes take longer. You'll get a realistic programme with your quotation.",
+    a: "Timescales vary with the size, access, preparation, complexity and weather. A straightforward domestic project may take several working days, while larger landscaping schemes take longer. The customer should receive a realistic programme with the quotation.",
   },
   {
     q: "How do you deal with drainage?",
-    a: "The site visit considers existing falls, thresholds and where rainwater can discharge. Depending on the property and surface, the solution may involve adjusted levels, permeable construction or channels connected to a suitable drainage point.",
+    a: "The site visit should consider existing falls, thresholds and where rainwater can discharge. Depending on the property and surface, the solution may involve adjusted levels, permeable construction or channels connected to a suitable drainage point.",
+  },
+  {
+    q: "Can you help with colours and design?",
+    a: "Yes. Customers can compare materials, aggregate blends, paving sizes, borders and layouts. Advice should consider the colour of the property, neighbouring surfaces, the size of the area and how decorative the customer wants the finish to be.",
   },
   {
     q: "Do you provide free quotes?",
-    a: "Yes — a free, no-obligation site visit and quotation. Call 07722 151231 or use the quote form to get started.",
+    a: "Yes, the intended offer is a free, no-obligation site visit and quotation. Confirm this with the client before publishing if the policy changes.",
+  },
+  {
+    q: "What areas do you cover?",
+    a: "The confirmed primary area is [PRIMARY AREA], with surrounding coverage to be listed as [SURROUNDING AREAS]. Customers can submit their postcode or call 07722 151231 to check availability.",
   },
 ];
 

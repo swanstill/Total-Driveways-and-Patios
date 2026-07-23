@@ -11,6 +11,14 @@
   --color-umber: #5B4130;
   --color-border: #E7E2D6;
 
+  /* Premium brand colours */
+  --color-navy-primary: #0F2747;
+  --color-deep-blue: #184F86;
+  --color-warm-gold: #CFA447;
+  --color-warm-cream: #F7F4EE;
+  --color-dark-text: #15202B;
+  --color-light-border: #E8E5DF;
+
   --font-heading: var(--font-sora);
   --font-body: var(--font-inter);
 
