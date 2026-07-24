@@ -16,7 +16,7 @@ export default function Footer() {
               />
             </div>
             <p className="max-w-[32ch] text-sm leading-relaxed">
-              Family-run driveway, patio and landscaping specialists serving Cardiff and South Wales since 1990.
+              Family-run driveway, patio and landscaping specialists serving Barnsley and South Yorkshire since 1990.
             </p>
           </div>
           <div>
@@ -42,7 +42,7 @@ export default function Footer() {
             <h5 className="text-white font-heading text-sm tracking-[.06em] uppercase mb-[18px]">Contact</h5>
             <ul className="space-y-[11px] text-sm">
               <li><a href="tel:07722151231" className="hover:text-white transition-colors">07722 151231</a></li>
-              <li>Cardiff &amp; South Wales</li>
+              <li>Barnsley &amp; South Yorkshire</li>
               <li>Mon–Fri, 8am–5pm</li>
             </ul>
           </div>

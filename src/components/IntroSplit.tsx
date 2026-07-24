@@ -8,7 +8,7 @@ export default function IntroSplit() {
             For your property, not just any property<span className="dot">.</span>
           </h2>
           <p>The outside of your property has to do more than look good in a photograph. A driveway must carry vehicles without sinking or shifting. A patio needs stable levels and drainage so it remains useful after heavy rain. A landscaped garden has to balance appearance with access, maintenance and the way your family actually uses the space.</p>
-          <p className="mt-4">Total Driveways and Patios provides a complete range of driveway, paving and landscaping services for homeowners in Cardiff and South Wales. Rather than treating the visible surface as the whole job, we look at the condition of the existing ground, access, levels, drainage, edging and the relationship between the new work and the rest of the property.</p>
+          <p className="mt-4">Total Driveways and Patios provides a complete range of driveway, paving and landscaping services for homeowners across Barnsley and South Yorkshire. Rather than treating the visible surface as the whole job, we look at the condition of the existing ground, access, levels, drainage, edging and the relationship between the new work and the rest of the property.</p>
         </div>
         <div className="visual aspect-[4/3.4] rounded-[20px] overflow-hidden shadow-card relative">
           <div className="swatch-tarmac w-full h-full" />

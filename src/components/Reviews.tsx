@@ -28,7 +28,7 @@ export default function Reviews() {
           <h2 className="text-[clamp(28px,3.2vw,40px)] mb-4">
             What our customers say<span className="dot">.</span>
           </h2>
-          <p>Verified reviews from customers across Cardiff and South Wales.</p>
+          <p>Verified reviews from customers across Barnsley and South Yorkshire.</p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {reviews.map((r) => (

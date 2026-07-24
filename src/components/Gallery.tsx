@@ -7,7 +7,7 @@ export default function Gallery() {
           <h2 className="text-[clamp(28px,3.2vw,40px)] mb-4">
             Real work, done properly<span className="dot">.</span>
           </h2>
-          <p>A balanced mix of completed driveways, patios and garden transformations across Cardiff and South Wales.</p>
+          <p>A balanced mix of completed driveways, patios and garden transformations across Barnsley and South Yorkshire.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr] md:grid-rows-[1fr_1fr] gap-[18px]">
