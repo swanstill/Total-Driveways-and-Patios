@@ -10,33 +10,33 @@ export default function Gallery() {
           <p>A balanced mix of completed driveways, patios and garden transformations across Cardiff and South Wales.</p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-[1.4fr_1fr_1fr] grid-rows-[1fr_1fr] gap-[18px]">
+        <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr] md:grid-rows-[1fr_1fr] gap-[18px]">
           {/* Large item */}
-          <div className="relative row-span-2 col-span-2 md:col-span-1 rounded-[16px] overflow-hidden shadow-card">
+          <div className="relative md:row-span-2 md:col-span-1 rounded-[16px] overflow-hidden shadow-card aspect-[16/9] md:aspect-auto">
             <img src="/gallery-1.webp" alt="New block-paving driveway" className="w-full h-full min-h-[300px] md:min-h-full object-cover" />
             <div className="absolute left-0 right-0 bottom-0 p-4 text-sm font-semibold text-white bg-gradient-to-t from-[rgba(16,24,48,.82)] to-[rgba(16,24,48,0)]">
               New block-paving driveway with a contrasting charcoal border and widened entrance.
             </div>
           </div>
-          <div className="relative rounded-[16px] overflow-hidden shadow-card aspect-[4/3] md:aspect-auto">
+          <div className="relative rounded-[16px] overflow-hidden shadow-card aspect-[16/9] md:aspect-auto">
             <img src="/gallery-2.webp" alt="Resin-bound driveway" className="w-full h-full object-cover" />
             <div className="absolute left-0 right-0 bottom-0 p-4 text-sm font-semibold text-white bg-gradient-to-t from-[rgba(16,24,48,.82)] to-[rgba(16,24,48,0)]">
               Resin-bound driveway in a warm aggregate blend with block edging.
             </div>
           </div>
-          <div className="relative rounded-[16px] overflow-hidden shadow-card aspect-[4/3] md:aspect-auto">
+          <div className="relative rounded-[16px] overflow-hidden shadow-card aspect-[16/9] md:aspect-auto">
             <img src="/gallery-3.webp" alt="Porcelain patio" className="w-full h-full object-cover" />
             <div className="absolute left-0 right-0 bottom-0 p-4 text-sm font-semibold text-white bg-gradient-to-t from-[rgba(16,24,48,.82)] to-[rgba(16,24,48,0)]">
               Porcelain patio with a clean seating area and step down to the garden.
             </div>
           </div>
-          <div className="relative rounded-[16px] overflow-hidden shadow-card aspect-[4/3] md:aspect-auto">
+          <div className="relative rounded-[16px] overflow-hidden shadow-card aspect-[16/9] md:aspect-auto">
             <img src="/gallery-4.webp" alt="Tarmac driveway" className="w-full h-full object-cover" />
             <div className="absolute left-0 right-0 bottom-0 p-4 text-sm font-semibold text-white bg-gradient-to-t from-[rgba(16,24,48,.82)] to-[rgba(16,24,48,0)]">
               Tarmac driveway with decorative block-paving border.
             </div>
           </div>
-          <div className="relative rounded-[16px] overflow-hidden shadow-card aspect-[4/3] md:aspect-auto">
+          <div className="relative rounded-[16px] overflow-hidden shadow-card aspect-[16/9] md:aspect-auto">
             <img src="/gallery-5.webp" alt="Full garden landscaping" className="w-full h-full object-cover" />
             <div className="absolute left-0 right-0 bottom-0 p-4 text-sm font-semibold text-white bg-gradient-to-t from-[rgba(16,24,48,.82)] to-[rgba(16,24,48,0)]">
               Full garden landscaping with new turf, beds and paths.
