@@ -8,11 +8,11 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-[10px] mb-4">
               <Image
-                src="/logo.png"
+                src="/footer-logo.png"
                 alt="Total Driveways and Patios"
-                width={150}
-                height={150}
-                className="w-[150px] h-[150px] object-contain -my-[30px]"
+                width={180}
+                height={60}
+                className="w-[180px] h-auto object-contain"
               />
             </div>
             <p className="max-w-[32ch] text-sm leading-relaxed">
