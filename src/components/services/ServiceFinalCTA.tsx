@@ -5,89 +5,77 @@ import Link from "next/link";
 
 export default function ServiceFinalCTA() {
   return (
-    <section className="relative overflow-hidden" style={{ background: "var(--svc-deep-navy)" }}>
-      {/* Background pattern */}
+    <section
+      className="relative overflow-hidden py-[100px]"
+      style={{ background: "linear-gradient(135deg, #08213F 0%, #0F2747 50%, #1A3A5C 100%)" }}
+    >
+      {/* Subtle pattern */}
       <div
-        className="absolute inset-0 opacity-[0.04]"
+        className="absolute inset-0 opacity-[0.03]"
         style={{
-          backgroundImage:
-            "radial-gradient(circle at 20% 50%, #fff 1px, transparent 1px), radial-gradient(circle at 80% 30%, #fff 1px, transparent 1px)",
-          backgroundSize: "40px 40px, 60px 60px",
-        }}
-      />
-      <div
-        className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full opacity-[0.06]"
-        style={{
-          background: "radial-gradient(circle, var(--svc-gold) 0%, transparent 70%)",
-          transform: "translate(30%, -30%)",
+          backgroundImage: "radial-gradient(circle at 30% 50%, #fff 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
         }}
       />
 
-      <div className="svc-container relative z-10 py-24">
+      <div className="max-w-[1280px] mx-auto px-6 relative z-10">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-center max-w-[750px] mx-auto"
+          className="text-center max-w-[720px] mx-auto"
         >
-          <motion.h2
+          <motion.span
             custom={0}
-            variants={{
-              hidden: { opacity: 0, y: 24 },
-              visible: (i) => ({ opacity: 1, y: 0, transition: { duration: 0.6, delay: i * 0.1 } }),
-            }}
-            className="!text-white leading-[1.1] mb-6"
-            style={{ fontFamily: "var(--font-manrope), sans-serif" }}
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: (i) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: i * 0.1 } }) }}
+            className="text-[11px] font-bold tracking-[0.22em] uppercase"
+            style={{ color: "var(--svc-gold)" }}
           >
-            Ready to Transform Your Block Paving Driveway?
-          </motion.h2>
-
-          <motion.p
+            — Start Your Project
+          </motion.span>
+          <motion.h2
             custom={1}
-            variants={{
-              hidden: { opacity: 0, y: 24 },
-              visible: (i) => ({ opacity: 1, y: 0, transition: { duration: 0.6, delay: i * 0.1 } }),
-            }}
-            className="text-[17px] mb-10"
-            style={{ color: "rgba(255,255,255,0.65)" }}
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: (i) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: i * 0.1 } }) }}
+            className="mt-5 mb-5 !text-white"
+            style={{ fontFamily: "var(--font-manrope), sans-serif", fontSize: "clamp(28px, 2.8vw, 42px)", fontWeight: 700, letterSpacing: "-0.02em" }}
           >
-            Get in touch today for a free, no-obligation site visit and quotation. We&apos;ll discuss
-            your project, show you samples and provide a clear price — no pressure, no hidden extras.
-          </motion.p>
-
-          <motion.div
+            Transform Your Driveway Today
+          </motion.h2>
+          <motion.p
             custom={2}
-            variants={{
-              hidden: { opacity: 0, y: 24 },
-              visible: (i) => ({ opacity: 1, y: 0, transition: { duration: 0.6, delay: i * 0.1 } }),
-            }}
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: (i) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: i * 0.1 } }) }}
+            className="text-[17px] mb-10 max-w-[560px] mx-auto"
+            style={{ color: "rgba(255,255,255,0.7)" }}
+          >
+            Take the first step toward a stunning new driveway. Contact us today for a free,
+            no-obligation quote and let&apos;s bring your vision to life.
+          </motion.p>
+          <motion.div
+            custom={3}
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: (i) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: i * 0.1 } }) }}
             className="flex flex-wrap justify-center gap-4"
           >
-            <Link href="#quote" className="btn-svc btn-svc-primary text-[16px] !px-8 !py-4">
-              <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="w-[18px] h-[18px]">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6M9 8h1M5 4h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1z" />
-              </svg>
+            <Link
+              href="#quote"
+              className="inline-flex items-center gap-2.5 font-bold text-[16px] px-8 py-4 rounded-[12px] transition-all"
+              style={{ background: "var(--svc-gold)", color: "#fff", boxShadow: "0 8px 28px -6px rgba(200,155,74,0.45)" }}
+            >
               Get Free Quote
+              <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="w-[18px] h-[18px]">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
+              </svg>
             </Link>
-            <Link href="tel:07722151231" className="btn-svc btn-svc-secondary text-[16px] !px-8 !py-4">
+            <Link
+              href="tel:07722151231"
+              className="inline-flex items-center gap-2.5 font-bold text-[16px] px-8 py-4 rounded-[12px] transition-all"
+              style={{ border: "2px solid rgba(255,255,255,0.25)", color: "#fff" }}
+            >
               <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="w-[18px] h-[18px]">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.2 3.6a1 1 0 01-.27 1.05L7.7 9.79a11 11 0 006.5 6.5l1.46-1.46a1 1 0 011.05-.27l3.6 1.2a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.61 21 3 14.39 3 6V5z" />
               </svg>
               Call 07722 151231
             </Link>
           </motion.div>
-
-          <motion.p
-            custom={3}
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: (i) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.4 } }),
-            }}
-            className="mt-8 text-[14px]"
-            style={{ color: "rgba(255,255,255,0.4)" }}
-          >
-            No obligation · Free site visit · Clear pricing · 5-year guarantee
-          </motion.p>
         </motion.div>
       </div>
     </section>
