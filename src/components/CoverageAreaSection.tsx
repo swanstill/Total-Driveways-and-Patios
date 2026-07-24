@@ -23,60 +23,67 @@ import {
 // ─── Constants ────────────────────────────────────────────────────────────
 
 const COVERED_POSTCODES = [
-  "CF10", "CF11", "CF14", "CF15", "CF5",
-  "CF3", "CF23", "CF24", "CF31", "CF32",
-  "CF33", "CF35", "CF36", "CF37", "CF38",
-  "CF39", "CF40", "CF41", "CF42", "CF43",
-  "CF44", "CF45", "CF46", "CF47", "CF48",
-  "CF61", "CF62", "CF63", "CF64", "CF71",
-  "CF72", "CF81", "CF82", "CF83", "CF91",
-  "NP10", "NP11", "NP12", "NP13", "NP15",
-  "NP16", "NP18", "NP19", "NP20", "NP22",
-  "NP23", "NP24", "NP25", "NP26",
+  "S70", "S71", "S72", "S73", "S74", "S75",
+  "S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10",
+  "S11", "S12", "S13", "S14", "S17", "S18", "S20", "S21",
+  "S25", "S26", "S35", "S36", "S40", "S41", "S42", "S43",
+  "S44", "S45", "S60", "S61", "S62", "S63", "S65", "S66",
+  "S80", "S81",
+  "DN1", "DN2", "DN3", "DN4", "DN5", "DN6", "DN7", "DN8", "DN11", "DN12",
+  "WF1", "WF2", "WF3", "WF4", "WF5", "WF6", "WF7", "WF8", "WF9", "WF10", "WF11", "WF12",
+  "LS1", "LS2", "LS3", "LS4", "LS5", "LS6", "LS7", "LS8", "LS9", "LS10",
+  "LS11", "LS12", "LS13", "LS14", "LS15", "LS16", "LS17", "LS18", "LS19",
+  "LS20", "LS21", "LS22", "LS23", "LS24", "LS25", "LS26", "LS27", "LS28", "LS29",
+  "BD1", "BD2", "BD3", "BD4", "BD5", "BD6", "BD7", "BD8", "BD9", "BD10",
+  "BD11", "BD12", "BD13", "BD14", "BD15", "BD16", "BD17", "BD18", "BD19", "BD20",
+  "BD21", "BD22", "BD23", "BD24",
+  "HD1", "HD2", "HD3", "HD4", "HD5", "HD6", "HD7", "HD8", "HD9",
+  "NG18", "NG19", "NG20", "NG21", "NG22",
 ];
 
 const ALL_AREAS = [
-  "Cardiff", "Barry", "Penarth", "Caerphilly",
-  "Newport", "Pontypridd", "Bridgend", "Llantwit Major",
-  "Cowbridge", "Dinas Powys", "Radyr", "Whitchurch",
-  "Rhiwbina", "Llanishen", "Canton", "Roath",
-  "Lisvane", "Rumney", "St Mellons",
+  "Barnsley", "Sheffield", "Rotherham", "Doncaster",
+  "Wakefield", "Leeds", "Bradford", "Huddersfield",
+  "Chesterfield", "Worksop", "Mansfield", "Pontefract",
+  "Penistone", "Wombwell", "Hoyland", "Dodworth",
+  "Silkstone", "Darton", "Cudworth", "Birdwell",
 ];
 
 const INITIAL_VISIBLE = 9;
 
 const DISTANCES: Record<string, string> = {
-  Cardiff: "0 miles",
-  Barry: "10 miles",
-  Penarth: "3 miles",
-  Newport: "12 miles",
-  Bridgend: "20 miles",
-  Pontypridd: "10 miles",
-  Caerphilly: "8 miles",
-  "Llantwit Major": "17 miles",
-  Cowbridge: "12 miles",
-  "Dinas Powys": "5 miles",
-  Radyr: "4 miles",
-  Whitchurch: "3 miles",
-  Rhiwbina: "4 miles",
-  Llanishen: "4 miles",
-  Canton: "2 miles",
-  Roath: "2 miles",
-  Lisvane: "5 miles",
-  Rumney: "4 miles",
-  "St Mellons": "5 miles",
+  Barnsley: "0 miles",
+  Sheffield: "14 miles",
+  Rotherham: "10 miles",
+  Doncaster: "18 miles",
+  Wakefield: "14 miles",
+  Leeds: "23 miles",
+  Bradford: "25 miles",
+  Huddersfield: "18 miles",
+  Chesterfield: "16 miles",
+  Worksop: "22 miles",
+  Mansfield: "30 miles",
+  Pontefract: "16 miles",
+  Penistone: "8 miles",
+  Wombwell: "4 miles",
+  Hoyland: "5 miles",
+  Dodworth: "3 miles",
+  Silkstone: "5 miles",
+  Darton: "4 miles",
+  Cudworth: "3 miles",
+  Birdwell: "3 miles",
 };
 
 const MAP_LOCATIONS = [
-  { name: "Cardiff", x: 300, y: 260, isPrimary: true },
-  { name: "Penarth", x: 258, y: 298 },
-  { name: "Barry", x: 200, y: 338 },
-  { name: "Newport", x: 415, y: 250 },
-  { name: "Bridgend", x: 140, y: 310 },
-  { name: "Pontypridd", x: 230, y: 190 },
-  { name: "Caerphilly", x: 330, y: 200 },
-  { name: "Cowbridge", x: 180, y: 278 },
-  { name: "Llantwit Major", x: 160, y: 350 },
+  { name: "Barnsley", x: 280, y: 230, isPrimary: true },
+  { name: "Sheffield", x: 350, y: 290 },
+  { name: "Rotherham", x: 330, y: 270 },
+  { name: "Doncaster", x: 420, y: 250 },
+  { name: "Wakefield", x: 350, y: 180 },
+  { name: "Leeds", x: 340, y: 120 },
+  { name: "Bradford", x: 280, y: 110 },
+  { name: "Huddersfield", x: 210, y: 160 },
+  { name: "Chesterfield", x: 310, y: 340 },
 ];
 
 const STATS_DATA = [
@@ -190,8 +197,8 @@ function CoverageMap({
   hoveredMarker: string | null;
   setHoveredMarker: (name: string | null) => void;
 }) {
-  const cx = 300;
-  const cy = 260;
+  const cx = 280;
+  const cy = 230;
 
   return (
     <div className="relative w-full h-full min-h-[200px] rounded-[24px] overflow-hidden shadow-[0_12px_32px_-12px_rgba(15,39,71,0.10)] bg-[#F0EBE1]">
@@ -200,7 +207,7 @@ function CoverageMap({
         className="w-full h-full"
         preserveAspectRatio="xMidYMid meet"
         role="img"
-        aria-label="Interactive coverage map of South Wales showing Cardiff as primary service area and surrounding towns"
+        aria-label="Interactive coverage map of South Yorkshire showing Barnsley as primary service area and surrounding towns"
       >
         <defs>
           <pattern
@@ -231,25 +238,30 @@ function CoverageMap({
         <rect width="600" height="500" fill="#F0EBE1" />
         <rect width="600" height="500" fill="url(#roadGrid)" />
 
-        {/* Water */}
+        {/* Green areas / parks */}
         <path
-          d="M 0 420 Q 100 390, 200 405 Q 300 415, 400 395 Q 500 375, 600 380 L 600 500 L 0 500 Z"
-          fill="#D5E3E8"
-          opacity="0.5"
+          d="M 80 380 Q 150 350, 220 370 Q 290 390, 360 365 Q 430 340, 480 360 L 500 420 L 60 420 Z"
+          fill="#DFE8D0"
+          opacity="0.4"
+        />
+        <path
+          d="M 100 120 Q 180 100, 260 110 Q 340 120, 400 100 Q 460 80, 520 90 L 540 160 Q 480 170, 420 180 Q 350 190, 280 170 Q 200 150, 100 160 Z"
+          fill="#DFE8D0"
+          opacity="0.3"
         />
 
-        {/* Coastline */}
+        {/* River Don / Dearne */}
         <path
-          d="M 0 420 Q 100 390, 200 405 Q 300 415, 400 395 Q 500 375, 600 380"
+          d="M 100 280 Q 180 260, 220 250 Q 280 240, 320 255 Q 380 270, 440 250 Q 490 235, 530 230"
           fill="none"
           stroke="#C0D0D6"
           strokeWidth="2"
-          opacity="0.6"
+          opacity="0.5"
         />
 
-        {/* County outline */}
+        {/* County outline (South Yorkshire) */}
         <path
-          d="M 80 380 C 100 370, 150 365, 180 370 C 210 375, 240 385, 270 380 C 300 375, 340 370, 380 365 C 420 360, 460 350, 500 330 C 520 320, 540 300, 550 270 C 555 250, 550 220, 540 190 C 530 160, 510 140, 480 125 C 450 110, 410 105, 370 110 C 330 115, 290 120, 250 125 C 210 130, 170 140, 140 160 C 110 180, 90 210, 75 250 C 60 290, 55 330, 65 360 Z"
+          d="M 60 400 C 80 370, 120 350, 160 340 C 200 330, 240 325, 280 320 C 320 315, 360 310, 400 300 C 440 290, 480 270, 510 240 C 530 220, 540 190, 530 160 C 520 130, 490 110, 460 100 C 430 90, 390 85, 350 90 C 310 95, 270 100, 230 110 C 190 120, 150 135, 120 160 C 90 185, 65 220, 50 260 C 35 300, 30 340, 40 380 Z"
           fill="none"
           stroke="#D0C8B6"
           strokeWidth="1.5"
@@ -260,44 +272,68 @@ function CoverageMap({
         {/* Roads */}
         <g opacity="0.4">
           <path
-            d="M 140 310 Q 200 300, 300 260 Q 400 250, 415 250"
+            d="M 280 230 Q 310 260, 350 290"
             fill="none"
             stroke="#C8C0AE"
             strokeWidth="2"
           />
           <path
-            d="M 230 190 Q 260 220, 300 260"
+            d="M 280 230 Q 305 250, 330 270"
             fill="none"
             stroke="#C8C0AE"
             strokeWidth="1.5"
           />
           <path
-            d="M 300 260 Q 320 220, 330 200"
+            d="M 280 230 Q 350 240, 420 250"
+            fill="none"
+            stroke="#C8C0AE"
+            strokeWidth="2"
+          />
+          <path
+            d="M 280 230 Q 315 205, 350 180"
             fill="none"
             stroke="#C8C0AE"
             strokeWidth="1.5"
           />
           <path
-            d="M 300 260 Q 280 290, 258 298"
+            d="M 280 230 Q 310 175, 340 120"
+            fill="none"
+            stroke="#C8C0AE"
+            strokeWidth="2"
+          />
+          <path
+            d="M 280 230 Q 280 170, 280 110"
             fill="none"
             stroke="#C8C0AE"
             strokeWidth="1.5"
           />
           <path
-            d="M 200 338 Q 220 320, 258 298"
+            d="M 280 230 Q 245 195, 210 160"
             fill="none"
             stroke="#C8C0AE"
             strokeWidth="1.5"
           />
           <path
-            d="M 218 228 Q 240 240, 300 260"
+            d="M 280 230 Q 295 285, 310 340"
             fill="none"
             stroke="#C8C0AE"
             strokeWidth="1.5"
+          />
+          <path
+            d="M 330 270 Q 360 260, 420 250"
+            fill="none"
+            stroke="#C8C0AE"
+            strokeWidth="1"
+          />
+          <path
+            d="M 350 290 Q 400 330, 410 380"
+            fill="none"
+            stroke="#C8C0AE"
+            strokeWidth="1"
           />
         </g>
 
-        {/* Connection lines from Cardiff to secondary locations */}
+        {/* Connection lines from Barnsley to secondary locations */}
         {MAP_LOCATIONS.filter((l) => !l.isPrimary).map((loc) => (
           <line
             key={`line-${loc.name}`}
@@ -312,7 +348,7 @@ function CoverageMap({
           />
         ))}
 
-        {/* Three animated concentric rings around Cardiff */}
+        {/* Three animated concentric rings around Barnsley */}
         {[55, 110, 165].map((r, i) => (
           <motion.circle
             key={`ring-${i}`}
@@ -783,9 +819,9 @@ export default function CoverageAreaSection() {
               transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
               className="font-[var(--font-manrope)] text-[#0F2747] text-[clamp(34px,5vw,58px)] font-extrabold leading-[1.08] tracking-[-0.02em] mb-4"
             >
-              Covering Cardiff
+              Covering Barnsley
               <br />
-              <span className="text-[#C89B4A]">&amp; Surrounding Areas</span>
+              <span className="text-[#C89B4A]">&amp; 40 Mile Radius</span>
             </motion.h2>
 
             {/* Description */}
@@ -796,10 +832,10 @@ export default function CoverageAreaSection() {
               className="font-[var(--font-manrope)] text-[#5B6574] text-[18px] leading-relaxed max-w-[520px] mb-8"
             >
               We proudly provide professional driveway, patio, paving and
-              landscaping services throughout Cardiff and the surrounding areas.
-              Whether you&apos;re in the city or a nearby town, our experienced team
-              delivers the same high standards of workmanship and customer service
-              on every project.
+              landscaping services throughout Barnsley and the surrounding
+              area within a 40-mile radius. Whether you&apos;re in the town or a
+              nearby city, our experienced team delivers the same high
+              standards of workmanship and customer service on every project.
             </motion.p>
 
             {/* Stats Cards */}

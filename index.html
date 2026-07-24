@@ -581,9 +581,9 @@
       <!-- ── COL 1: TEXT + STATS ── -->
       <div class="cov-text-col">
         <span class="cov-label anim-fade-up">Local Coverage</span>
-        <h2 id="cov-heading" class="cov-heading anim-fade-up">Covering <span class="gold">Cardiff</span> &amp; Surrounding Areas</h2>
+        <h2 id="cov-heading" class="cov-heading anim-fade-up">Covering <span class="gold">Barnsley</span> &amp; 40 Mile Radius</h2>
         <div class="cov-divider anim-fade-up"></div>
-        <p class="cov-desc anim-fade-up">Total Driveways and Patios provides professional driveway, patio and landscaping services throughout Cardiff and nearby locations. If you&apos;re just outside our normal service area, contact us and we&apos;ll happily confirm availability.</p>
+        <p class="cov-desc anim-fade-up">Total Driveways and Patios provides professional driveway, patio and landscaping services throughout Barnsley and the surrounding area within a 40-mile radius. If you&apos;re just outside our normal service area, contact us and we&apos;ll happily confirm availability.</p>
         <div class="cov-stats anim-fade-up">
           <div class="cov-stat">
             <div class="stat-icon"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
@@ -605,89 +605,103 @@
 
       <!-- ── COL 2: MAP ── -->
       <div class="cov-map-col anim-fade-up">
-        <svg viewBox="0 0 400 420" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Coverage map of South Wales">
+        <svg viewBox="0 0 400 420" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Coverage map of South Yorkshire">
           <defs>
             <filter id="map-shadow"><feDropShadow dx="0" dy="1" stdDeviation="2" floodColor="#1B2A4A" floodOpacity="0.08"/></filter>
           </defs>
-          <!-- Background land -->
+          <!-- Background -->
           <rect width="400" height="420" fill="#EDE7DA" rx="16"/>
 
-          <!-- Water (Bristol Channel) -->
-          <path d="M20 340 Q100 330 180 345 Q250 355 320 340 Q360 330 380 335 L380 420 L20 420 Z" fill="#BFD9E8" opacity="0.7"/>
+          <!-- Green areas / countryside -->
+          <path d="M60 320 Q120 300 180 310 Q240 320 300 305 Q340 295 370 300 L380 420 L20 420 Z" fill="#DCE6CC" opacity="0.35"/>
+          <path d="M40 100 Q100 80 160 90 Q220 100 280 85 Q330 75 370 85 L370 140 Q310 150 250 145 Q190 140 130 135 Q70 130 40 125 Z" fill="#DCE6CC" opacity="0.3"/>
 
-          <!-- Coastline detail -->
-          <path d="M20 340 Q100 330 180 345 Q250 355 320 340 Q360 330 380 335" fill="none" stroke="#B0C8D8" stroke-width="1.5"/>
+          <!-- River Don -->
+          <path d="M40 280 Q90 270 140 260 Q190 250 240 255 Q290 260 340 250 Q370 245 390 240" fill="none" stroke="#BFD9E8" stroke-width="2" opacity="0.5"/>
+          <path d="M40 285 Q90 275 140 265 Q190 255 240 260 Q290 265 340 255 Q370 250 390 245" fill="none" stroke="#BFD9E8" stroke-width="1" opacity="0.3"/>
 
           <!-- County outline -->
-          <path d="M60 360Q120 350 200 355Q280 360 350 345" fill="none" stroke="#D5C8B4" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.6"/>
+          <path d="M30 370 Q70 350 120 340 Q170 330 220 325 Q270 320 320 310 Q360 300 380 280 Q390 260 385 230 Q378 200 360 175 Q340 155 310 140 Q280 125 250 120 Q220 115 190 118 Q160 121 130 130 Q100 140 75 160 Q55 180 40 210 Q28 240 25 275 Q22 310 25 345 Z" fill="none" stroke="#D5C8B4" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.6"/>
 
           <!-- Roads (thin taupe lines) -->
           <g fill="none" stroke="#D5C8B4" stroke-width="1" opacity="0.5">
-            <path d="M200 180 L155 220"/>
-            <path d="M200 180 L105 260"/>
-            <path d="M200 180 L310 180"/>
-            <path d="M200 180 L70 230"/>
-            <path d="M200 180 L155 110"/>
-            <path d="M200 180 L250 120"/>
-            <path d="M200 180 L130 160"/>
-            <path d="M130 160 L155 110"/>
-            <path d="M155 220 L105 260"/>
-            <path d="M250 120 L310 180"/>
+            <path d="M200 180 L245 225"/>
+            <path d="M200 180 L230 210"/>
+            <path d="M200 180 L310 195"/>
+            <path d="M200 180 L255 140"/>
+            <path d="M200 180 L245 90"/>
+            <path d="M200 180 L200 85"/>
+            <path d="M200 180 L150 125"/>
+            <path d="M200 180 L220 265"/>
+            <path d="M200 180 L160 170"/>
+            <path d="M200 180 L285 155"/>
           </g>
 
           <!-- Radius rings (dashed) -->
-          <circle cx="200" cy="180" r="40" fill="none" stroke="#C9975A" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
-          <circle cx="200" cy="180" r="75" fill="none" stroke="#C9975A" stroke-width="1" stroke-dasharray="4 4" opacity="0.25"/>
-          <circle cx="200" cy="180" r="110" fill="none" stroke="#C9975A" stroke-width="0.8" stroke-dasharray="3 5" opacity="0.18"/>
+          <circle cx="200" cy="180" r="35" fill="none" stroke="#C9975A" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
+          <circle cx="200" cy="180" r="65" fill="none" stroke="#C9975A" stroke-width="1" stroke-dasharray="4 4" opacity="0.25"/>
+          <circle cx="200" cy="180" r="95" fill="none" stroke="#C9975A" stroke-width="0.8" stroke-dasharray="3 5" opacity="0.18"/>
 
-          <!-- Pin: Cardiff (primary - larger, gold) -->
+          <!-- Pin: Barnsley (primary - larger, gold) -->
           <g filter="url(#map-shadow)">
             <circle cx="200" cy="180" r="10" fill="#C9975A" stroke="#fff" stroke-width="2.5"/>
             <circle cx="200" cy="180" r="3" fill="#fff" opacity="0.9"/>
             <circle class="map-pulse" cx="200" cy="180" r="16" fill="none" stroke="#C9975A" stroke-width="1.5"/>
-            <text x="214" y="184" font-size="10" font-weight="700" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Cardiff</text>
+            <text x="214" y="184" font-size="10" font-weight="700" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Barnsley</text>
           </g>
 
-          <!-- Pin: Penarth -->
+          <!-- Pin: Sheffield -->
           <g filter="url(#map-shadow)">
-            <circle cx="155" cy="222" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
-            <text x="163" y="225" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Penarth</text>
+            <circle cx="245" cy="225" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
+            <text x="253" y="228" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Sheffield</text>
           </g>
 
-          <!-- Pin: Barry -->
+          <!-- Pin: Rotherham -->
           <g filter="url(#map-shadow)">
-            <circle cx="105" cy="262" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
-            <text x="113" y="265" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Barry</text>
+            <circle cx="230" cy="210" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
+            <text x="238" y="213" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Rotherham</text>
           </g>
 
-          <!-- Pin: Newport -->
+          <!-- Pin: Doncaster -->
           <g filter="url(#map-shadow)">
-            <circle cx="310" cy="182" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
-            <text x="318" y="185" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Newport</text>
+            <circle cx="310" cy="195" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
+            <text x="318" y="198" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Doncaster</text>
           </g>
 
-          <!-- Pin: Bridgend -->
+          <!-- Pin: Wakefield -->
           <g filter="url(#map-shadow)">
-            <circle cx="70" cy="232" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
-            <text x="78" y="235" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Bridgend</text>
+            <circle cx="255" cy="140" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
+            <text x="263" y="143" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Wakefield</text>
           </g>
 
-          <!-- Pin: Pontypridd -->
+          <!-- Pin: Leeds -->
           <g filter="url(#map-shadow)">
-            <circle cx="155" cy="112" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
-            <text x="163" y="115" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Pontypridd</text>
+            <circle cx="245" cy="90" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
+            <text x="253" y="93" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Leeds</text>
           </g>
 
-          <!-- Pin: Caerphilly -->
+          <!-- Pin: Bradford -->
           <g filter="url(#map-shadow)">
-            <circle cx="250" cy="122" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
-            <text x="258" y="125" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Caerphilly</text>
+            <circle cx="200" cy="85" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
+            <text x="208" y="88" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Bradford</text>
           </g>
 
-          <!-- Pin: Llantrisant -->
+          <!-- Pin: Huddersfield -->
           <g filter="url(#map-shadow)">
-            <circle cx="130" cy="162" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
-            <text x="138" y="165" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Llantrisant</text>
+            <circle cx="150" cy="125" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
+            <text x="158" y="128" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Huddersfield</text>
+          </g>
+
+          <!-- Pin: Chesterfield -->
+          <g filter="url(#map-shadow)">
+            <circle cx="220" cy="265" r="5" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
+            <text x="228" y="268" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Chesterfield</text>
+          </g>
+
+          <!-- Pin: Penistone -->
+          <g filter="url(#map-shadow)">
+            <circle cx="160" cy="170" r="4" fill="#1B2A4A" stroke="#fff" stroke-width="2"/>
+            <text x="166" y="173" font-size="9" font-weight="600" fill="#1B2A4A" font-family="Manrope,sans-serif" dominant-baseline="middle">Penistone</text>
           </g>
         </svg>
       </div>
@@ -697,14 +711,14 @@
         <div class="cov-card anim-fade-up">
           <h3>Areas We Cover</h3>
           <ul class="cov-list">
-            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Cardiff<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
-            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Penarth<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
-            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Barry<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
-            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Newport<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
-            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Bridgend<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
-            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Pontypridd<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
-            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Caerphilly<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
-            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Llantrisant<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
+            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Barnsley<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
+            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Sheffield<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
+            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Rotherham<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
+            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Doncaster<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
+            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Wakefield<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
+            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Leeds<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
+            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Huddersfield<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
+            <li><svg class="pin" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1116 0z"/><circle cx="12" cy="10" r="3"/></svg>Chesterfield<svg class="check" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></li>
           </ul>
           <div class="cov-more">+ More Surrounding Areas</div>
         </div>
