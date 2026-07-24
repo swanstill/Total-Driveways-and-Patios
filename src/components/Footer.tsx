@@ -10,9 +10,9 @@ export default function Footer() {
               <Image
                 src="/footer-logo.png"
                 alt="Total Driveways and Patios"
-                width={220}
-                height={75}
-                className="w-[220px] h-auto object-contain"
+                width={200}
+                height={68}
+                className="w-[200px] h-auto object-contain"
               />
             </div>
             <p className="max-w-[32ch] text-sm leading-relaxed">
