@@ -84,7 +84,7 @@ export default function ServiceHero() {
       />
 
       {/* === Main Content === */}
-      <div className="max-w-[1280px] mx-auto px-6 w-full relative z-10 py-12 lg:py-0">
+      <div className="max-w-[1280px] mx-auto px-6 w-full relative z-10 py-[30px] lg:py-0">
         <motion.div
           variants={container}
           initial="hidden"
