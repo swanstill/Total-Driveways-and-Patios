@@ -442,7 +442,6 @@ section {
 
 @media (max-width: 860px) {
   .svc-sticky-cta { display: flex; }
-  .service-page { padding-bottom: 80px; }
 }
 
 .svc-sticky-cta .btn-svc {
