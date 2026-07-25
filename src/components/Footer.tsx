@@ -23,10 +23,10 @@ export default function Footer() {
             <h5 className="text-white font-heading text-sm tracking-[.06em] uppercase mb-[18px]">Services</h5>
             <ul className="space-y-[11px] text-sm">
               <li><a href="/services/block-paving" className="hover:text-white transition-colors">Block Paving</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Resin Driveways</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Tarmac Driveways</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Patios</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Landscaping</a></li>
+              <li><a href="/services/resin-driveways" className="hover:text-white transition-colors">Resin Driveways</a></li>
+              <li><a href="/services/tarmac-driveways" className="hover:text-white transition-colors">Tarmac Driveways</a></li>
+              <li><a href="/services/patios" className="hover:text-white transition-colors">Patios</a></li>
+              <li><a href="/services/landscaping" className="hover:text-white transition-colors">Landscaping</a></li>
             </ul>
           </div>
           <div>
@@ -34,6 +34,7 @@ export default function Footer() {
             <ul className="space-y-[11px] text-sm">
               <li><a href="#gallery" className="hover:text-white transition-colors">Gallery</a></li>
               <li><a href="#reviews" className="hover:text-white transition-colors">Reviews</a></li>
+              <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
               <li><a href="#quote" className="hover:text-white transition-colors">Get a quote</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Privacy policy</a></li>
             </ul>

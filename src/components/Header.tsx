@@ -48,12 +48,16 @@ export default function Header() {
               <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div className="bg-white rounded-[12px] shadow-[0_12px_40px_-8px_rgba(15,39,71,0.2)] border border-border py-2 min-w-[200px]">
                   <a href="/services/block-paving" className="block px-5 py-2.5 hover:bg-cream transition-colors">Block Paving</a>
+                  <a href="/services/resin-driveways" className="block px-5 py-2.5 hover:bg-cream transition-colors">Resin Driveways</a>
+                  <a href="/services/tarmac-driveways" className="block px-5 py-2.5 hover:bg-cream transition-colors">Tarmac Driveways</a>
+                  <a href="/services/patios" className="block px-5 py-2.5 hover:bg-cream transition-colors">Patios</a>
+                  <a href="/services/landscaping" className="block px-5 py-2.5 hover:bg-cream transition-colors">Landscaping</a>
                 </div>
               </div>
             </div>
             <a href="#gallery">Gallery</a>
             <a href="#reviews">Reviews</a>
-            <a href="#contact">Contact</a>
+            <a href="/contact">Contact</a>
           </div>
 
           <div className="flex items-center gap-[14px]">
@@ -83,9 +87,13 @@ export default function Header() {
             <a href="/" onClick={() => setDrawerOpen(false)}>Home</a>
             <a href="#services" onClick={() => setDrawerOpen(false)}>Services ▸</a>
             <a href="/services/block-paving" onClick={() => setDrawerOpen(false)} className="pl-6 text-[14px] opacity-75">— Block Paving</a>
+            <a href="/services/resin-driveways" onClick={() => setDrawerOpen(false)} className="pl-6 text-[14px] opacity-75">— Resin Driveways</a>
+            <a href="/services/tarmac-driveways" onClick={() => setDrawerOpen(false)} className="pl-6 text-[14px] opacity-75">— Tarmac Driveways</a>
+            <a href="/services/patios" onClick={() => setDrawerOpen(false)} className="pl-6 text-[14px] opacity-75">— Patios</a>
+            <a href="/services/landscaping" onClick={() => setDrawerOpen(false)} className="pl-6 text-[14px] opacity-75">— Landscaping</a>
             <a href="#gallery" onClick={() => setDrawerOpen(false)}>Gallery</a>
             <a href="#reviews" onClick={() => setDrawerOpen(false)}>Reviews</a>
-            <a href="#contact" onClick={() => setDrawerOpen(false)}>Contact</a>
+            <a href="/contact" onClick={() => setDrawerOpen(false)}>Contact</a>
             <a href="#quote" className="btn btn-primary !justify-center" onClick={() => setDrawerOpen(false)}>Get a free quote</a>
           </div>
         </div>
