@@ -103,7 +103,7 @@ export default function ServiceHero() {
                 className="text-[11px] font-bold tracking-[0.22em] uppercase"
                 style={{ color: "rgba(200,155,74,0.8)" }}
               >
-                Block Paving Specialists
+                Block Paving Specialists in Barnsley
               </span>
             </motion.div>
 
