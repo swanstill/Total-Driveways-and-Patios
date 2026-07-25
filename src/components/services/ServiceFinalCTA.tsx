@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function ServiceFinalCTA() {
   return (
     <section
-      className="relative overflow-hidden pt-[100px]"
+      className="relative overflow-hidden pt-[100px] pb-[60px] lg:pb-0"
       style={{ background: "linear-gradient(135deg, #08213F 0%, #0F2747 50%, #1A3A5C 100%)" }}
     >
       {/* Subtle pattern */}

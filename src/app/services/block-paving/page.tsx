@@ -37,9 +37,6 @@ export default function BlockPavingPage() {
       <QuoteFormSection />
       <ServiceFinalCTA />
       <ServiceMobileCTA />
-
-      {/* Spacer for mobile sticky CTA */}
-      <div className="h-[60px] lg:hidden" />
     </div>
   );
 }
