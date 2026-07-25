@@ -237,7 +237,7 @@ export default function ServiceHero() {
           {/* === Right: Image + Floating Elements === */}
           <motion.div
             variants={fadeIn}
-            className="hidden lg:block relative"
+            className="relative"
           >
             <div className="relative pl-8">
               {/* Decorative line behind image */}
@@ -259,7 +259,7 @@ export default function ServiceHero() {
               >
                 {/* Image */}
                 <div
-                  className="w-full h-[540px]"
+                  className="w-full h-[280px] lg:h-[540px]"
                   style={{
                     backgroundImage: "url('/gallery-1.jpeg')",
                     backgroundSize: "cover",
