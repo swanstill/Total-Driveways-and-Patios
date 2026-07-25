@@ -193,7 +193,7 @@ export default function ServiceWhyChooseUs() {
           >
             {/* Gold accent line behind image */}
             <div
-              className="absolute -top-6 -bottom-6 right-6 w-[2px] rounded-full opacity-[0.12]"
+              className="absolute -top-6 -bottom-6 right-6 w-[2px] rounded-full opacity-[0.12] hidden lg:block"
               style={{
                 background:
                   "linear-gradient(to bottom, var(--svc-gold) 0%, transparent 100%)",
@@ -201,10 +201,10 @@ export default function ServiceWhyChooseUs() {
             />
 
             {/* Image container with decorative frame */}
-            <div className="relative pl-6">
+            <div className="relative pl-0 lg:pl-6">
               {/* Top-left decorative bracket */}
               <div
-                className="absolute top-0 left-6 w-8 h-8 opacity-[0.15] z-10"
+                className="absolute top-0 left-6 w-8 h-8 opacity-[0.15] z-10 hidden lg:block"
                 style={{
                   borderTop: "2px solid var(--svc-gold)",
                   borderLeft: "2px solid var(--svc-gold)",
