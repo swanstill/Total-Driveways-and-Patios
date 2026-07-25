@@ -30,33 +30,20 @@ export default function QuoteMarketingPanel() {
       transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] as const }}
       className="relative rounded-[28px] overflow-hidden min-h-[500px] lg:h-full flex flex-col"
     >
-      {/* Background image with slow zoom */}
-      <motion.div
-        className="absolute inset-0"
-        initial={{ scale: 1.06 }}
-        whileInView={{ scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 8, ease: "easeOut" }}
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-warm-cream/70" />
+      {/* Solid background color */}
+      <div className="absolute inset-0 bg-[#C79A3C]" />
 
       {/* Content */}
       <div className="relative z-10 p-10 lg:p-12 flex flex-col flex-1">
         {/* Eyebrow */}
-        <span className="text-warm-gold text-[13px] font-bold uppercase tracking-[2px] mb-6 block">
+        <span className="text-white/90 text-[13px] font-bold uppercase tracking-[2px] mb-6 block">
           Get your free quote
         </span>
 
         {/* Heading */}
         <h2 className="text-navy-primary font-extrabold leading-[1.1] text-[clamp(22px,2.5vw,32px)] max-w-[20ch]">
           Let&apos;s Create Your{" "}
-          <span className="text-warm-gold">Perfect Outdoor Space</span>
+          <span className="text-white">Perfect Outdoor Space</span>
         </h2>
 
         {/* Supporting paragraph */}
