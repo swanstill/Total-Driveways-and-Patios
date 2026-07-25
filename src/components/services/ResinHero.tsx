@@ -193,7 +193,7 @@ export default function ResinHero() {
               {[
                 { label: "Free Site Visits", value: "" },
                 { label: "No-Obligation Quotes", value: "" },
-                { label: "Google Rating", value: "4.8" },
+                { label: "Google Rating", value: "5.0" },
               ].map((s) => (
                 <div key={s.label} className="flex items-center gap-3">
                   {s.value && (
@@ -300,7 +300,7 @@ export default function ResinHero() {
                   className="text-white text-[14px] font-bold"
                   style={{ letterSpacing: "-0.01em" }}
                 >
-                  4.8 Google Rating
+                  5.0 Google Rating
                 </span>
               </motion.div>
 

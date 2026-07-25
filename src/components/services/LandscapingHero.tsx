@@ -287,7 +287,7 @@ export default function LandscapingHero() {
                   ))}
                 </div>
                 <span className="text-white text-[14px] font-bold" style={{ letterSpacing: "-0.01em" }}>
-                  4.8 Google Rating
+                  5.0 Google Rating
                 </span>
               </motion.div>
 

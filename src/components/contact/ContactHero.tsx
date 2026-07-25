@@ -256,7 +256,7 @@ export default function ContactHero() {
                   </svg>
                 ))}
                 <span className="text-[13px] font-bold ml-1" style={{ color: "rgba(15,39,71,0.5)" }}>
-                  4.8 Google Rating
+                  5.0 Google Rating
                 </span>
               </div>
             </motion.div>
@@ -330,7 +330,7 @@ export default function ContactHero() {
                     Family-Run Since 1990
                   </span>
                   <span className="text-[11px]" style={{ color: "rgba(255,255,255,0.5)" }}>
-                    Rated 4.8 on Google
+                    Rated 5.0 on Google
                   </span>
                 </div>
               </motion.div>

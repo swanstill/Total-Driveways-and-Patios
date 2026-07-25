@@ -265,7 +265,7 @@ export default function PatiosContent() {
                       </svg>
                     ))}
                   </div>
-                  <div className="text-[12px] font-medium !text-white">Rated 4.8 / 5 on Google</div>
+                  <div className="text-[12px] font-medium !text-white">Rated 5.0 / 5 on Google</div>
                   <div className="text-[11px]" style={{ color: "rgba(255,255,255,0.4)" }}>50+ verified reviews</div>
                 </div>
               </div>
