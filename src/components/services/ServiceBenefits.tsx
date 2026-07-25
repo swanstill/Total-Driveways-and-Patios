@@ -82,7 +82,7 @@ export default function ServiceBenefits() {
               whileInView="visible"
               viewport={{ once: true }}
               custom={i}
-              variants={{ hidden: { opacity: 0, y: 24 }, visible: (j) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: j * 0.08, ease: [0.25, 0.1, 0.25, 1] } }) }}
+              variants={{ hidden: { opacity: 0, y: 24 }, visible: (j) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: j * 0.08, ease: [0.25, 0.1, 0.25, 1] as const } }) }}
               className="p-8 rounded-[20px] group hover:-translate-y-1.5 transition-all duration-300"
               style={{ boxShadow: "0 8px 30px -10px rgba(15,39,71,0.06)", border: "1px solid rgba(15,39,71,0.04)" }}
             >

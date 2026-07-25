@@ -160,7 +160,7 @@ export default function QuoteFormSection() {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
+              transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] as const }}
             >
               <div className="w-20 h-20 rounded-full bg-warm-gold/10 flex items-center justify-center mx-auto mb-8">
                 <svg className="w-10 h-10 text-warm-gold" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -216,7 +216,7 @@ export default function QuoteFormSection() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
-          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+          transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const }}
           className="flex flex-col lg:flex-row items-stretch"
         >
           {/* Left panel */}
@@ -230,7 +230,7 @@ export default function QuoteFormSection() {
               initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.7, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
+              transition={{ duration: 0.7, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] as const }}
               className="bg-white rounded-[28px] shadow-[0_24px_70px_rgba(15,39,71,0.10)] border border-light-border p-8 md:p-10 lg:p-12 w-full flex flex-col"
             >
               <QuoteProgressStepper current={step} />
@@ -245,7 +245,7 @@ export default function QuoteFormSection() {
                       initial={{ opacity: 0, y: 16 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -16 }}
-                      transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
+                      transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1] as const }}
                     >
                       {step === 0 && (
                         <StepHelpWith

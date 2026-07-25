@@ -22,7 +22,7 @@ export default function StepContact({ register, errors, consentValue, submitting
     <motion.div
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
+      transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1] as const }}
       className="space-y-4"
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

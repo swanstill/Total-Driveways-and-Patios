@@ -16,7 +16,7 @@ const fadeUp = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, ease: [0.25, 0.1, 0.25, 1] },
+    transition: { duration: 0.7, ease: [0.25, 0.1, 0.25, 1] as const },
   },
 };
 
@@ -25,7 +25,7 @@ const fadeIn = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.9, delay: 0.35, ease: [0.25, 0.1, 0.25, 1] },
+    transition: { duration: 0.9, delay: 0.35, ease: [0.25, 0.1, 0.25, 1] as const },
   },
 };
 
@@ -280,7 +280,7 @@ export default function ServiceHero() {
               <motion.div
                 initial={{ opacity: 0, y: 20, scale: 0.95 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+                transition={{ duration: 0.6, delay: 0.8, ease: [0.25, 0.1, 0.25, 1] as const }}
                 className="absolute -bottom-4 -left-2 flex items-center gap-3 px-5 py-3.5 rounded-[14px]"
                 style={{
                   background: "var(--svc-navy, #0F2747)",

@@ -111,7 +111,7 @@ function AnimatedNumber({
     if (isInView) {
       const controls = animate(count, value, {
         duration: 2,
-        ease: [0.25, 0.1, 0.25, 1],
+        ease: [0.25, 0.1, 0.25, 1] as const,
       });
       const unsubscribe = rounded.on("change", (v) => {
         setDisplay(`${v}${suffix}`);
@@ -165,7 +165,7 @@ function StatCard({
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-      transition={{ duration: 0.5, delay, ease: [0.25, 0.1, 0.25, 1] }}
+      transition={{ duration: 0.5, delay, ease: [0.25, 0.1, 0.25, 1] as const }}
       whileHover={{ y: -6 }}
       className="bg-white rounded-[16px] shadow-[0_8px_24px_-8px_rgba(15,39,71,0.10)] p-5 flex flex-col gap-2 transition-shadow duration-300 hover:shadow-[0_16px_40px_-12px_rgba(15,39,71,0.20)]"
     >
@@ -495,7 +495,7 @@ function CoverageListCard({ isInView }: { isInView: boolean }) {
     <motion.div
       initial={{ opacity: 0, y: 25 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 25 }}
-      transition={{ duration: 0.5, delay: 0.15, ease: [0.25, 0.1, 0.25, 1] }}
+      transition={{ duration: 0.5, delay: 0.15, ease: [0.25, 0.1, 0.25, 1] as const }}
       className="bg-white rounded-[20px] shadow-[0_8px_24px_-8px_rgba(15,39,71,0.10)] p-8 flex flex-col h-[490px]"
     >
       <h3 className="font-[var(--font-manrope)] font-extrabold text-[#0F2747] text-[22px] mb-1">
@@ -632,7 +632,7 @@ function CoverageCheckerCard({ isInView }: { isInView: boolean }) {
     <motion.div
       initial={{ opacity: 0, y: 25 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 25 }}
-      transition={{ duration: 0.5, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+      transition={{ duration: 0.5, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] as const }}
       className="bg-white rounded-[20px] shadow-[0_8px_24px_-8px_rgba(15,39,71,0.10)] overflow-hidden"
     >
       {/* Gold accent bar */}
@@ -796,7 +796,7 @@ export default function CoverageAreaSection() {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
+          transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] as const }}
           className="lg:grid lg:grid-cols-[70%_30%] lg:gap-[40px]"
         >
           {/* ═══════════════ Left Column ═══════════════ */}
@@ -805,7 +805,7 @@ export default function CoverageAreaSection() {
             <motion.span
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-              transition={{ duration: 0.4, delay: 0.05, ease: [0.25, 0.1, 0.25, 1] }}
+              transition={{ duration: 0.4, delay: 0.05, ease: [0.25, 0.1, 0.25, 1] as const }}
               className="block font-[var(--font-manrope)] text-[#C89B4A] text-[12px] font-bold tracking-[0.2em] uppercase mb-4"
             >
               Local Coverage
@@ -816,7 +816,7 @@ export default function CoverageAreaSection() {
               id="coverage-heading"
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] }}
+              transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.1, 0.25, 1] as const }}
               className="font-[var(--font-manrope)] text-[#0F2747] text-[clamp(34px,5vw,58px)] font-extrabold leading-[1.08] tracking-[-0.02em] mb-4"
             >
               Covering Barnsley
@@ -828,7 +828,7 @@ export default function CoverageAreaSection() {
             <motion.p
               initial={{ opacity: 0, y: 15 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-              transition={{ duration: 0.5, delay: 0.15, ease: [0.25, 0.1, 0.25, 1] }}
+              transition={{ duration: 0.5, delay: 0.15, ease: [0.25, 0.1, 0.25, 1] as const }}
               className="font-[var(--font-manrope)] text-[#5B6574] text-[18px] leading-relaxed max-w-[520px] mb-8"
             >
               We proudly provide professional driveway, patio, paving and
@@ -864,7 +864,7 @@ export default function CoverageAreaSection() {
               transition={{
                 duration: 0.7,
                 delay: 0.2,
-                ease: [0.25, 0.1, 0.25, 1],
+                ease: [0.25, 0.1, 0.25, 1] as const,
               }}
               className="h-[365px]"
             >

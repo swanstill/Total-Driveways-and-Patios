@@ -29,7 +29,7 @@ export default function Header() {
       {/* Main Header */}
       <header className="bg-white border-b border-border sticky top-0 z-50">
         <nav className="wrap flex items-center justify-between py-[5px] gap-6">
-          <a href="#" className="flex items-center gap-3">
+          <a href="/" className="flex items-center gap-3">
             <Image
               src="/logo.png"
               alt="Total Driveways and Patios"
@@ -42,8 +42,15 @@ export default function Header() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-[34px] font-semibold text-[15px] text-navy">
-            <a href="#" className="active-link">Home</a>
-            <a href="#services">Services ▾</a>
+            <a href="/" className="active-link">Home</a>
+            <div className="relative group">
+              <a href="#services" className="cursor-pointer">Services ▾</a>
+              <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="bg-white rounded-[12px] shadow-[0_12px_40px_-8px_rgba(15,39,71,0.2)] border border-border py-2 min-w-[200px]">
+                  <a href="/services/block-paving" className="block px-5 py-2.5 hover:bg-cream transition-colors">Block Paving</a>
+                </div>
+              </div>
+            </div>
             <a href="#gallery">Gallery</a>
             <a href="#reviews">Reviews</a>
             <a href="#contact">Contact</a>
@@ -73,8 +80,9 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 6l12 12M18 6L6 18" />
               </svg>
             </button>
-            <a href="#" onClick={() => setDrawerOpen(false)}>Home</a>
-            <a href="#services" onClick={() => setDrawerOpen(false)}>Services</a>
+            <a href="/" onClick={() => setDrawerOpen(false)}>Home</a>
+            <a href="#services" onClick={() => setDrawerOpen(false)}>Services ▸</a>
+            <a href="/services/block-paving" onClick={() => setDrawerOpen(false)} className="pl-6 text-[14px] opacity-75">— Block Paving</a>
             <a href="#gallery" onClick={() => setDrawerOpen(false)}>Gallery</a>
             <a href="#reviews" onClick={() => setDrawerOpen(false)}>Reviews</a>
             <a href="#contact" onClick={() => setDrawerOpen(false)}>Contact</a>

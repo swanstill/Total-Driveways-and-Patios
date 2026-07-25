@@ -32,7 +32,7 @@ export default function QuoteProgressStepper({ current }: { current: number }) {
         className="absolute top-[14px] h-[2px] bg-navy-primary -translate-y-1/2 rounded-full origin-left"
         initial={{ scaleX: 0 }}
         animate={{ scaleX: progressPct / 100 }}
-        transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+        transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const }}
         style={barStyle}
       />
       {stepLabels.map((label, i) => {
@@ -47,7 +47,7 @@ export default function QuoteProgressStepper({ current }: { current: number }) {
                 color: done || active ? "#FFFFFF" : "#9CA3AF",
                 scale: active ? 1.08 : 1,
               }}
-              transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+              transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] as const }}
               className="w-[28px] h-[28px] rounded-full flex items-center justify-center text-[11px] font-bold border-2 shrink-0"
             >
               {done ? (

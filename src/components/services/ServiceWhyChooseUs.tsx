@@ -16,7 +16,7 @@ const fadeUp = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] },
+    transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const },
   },
 };
 
@@ -188,7 +188,7 @@ export default function ServiceWhyChooseUs() {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] as const }}
             className="relative"
           >
             {/* Gold accent line behind image */}
@@ -242,7 +242,7 @@ export default function ServiceWhyChooseUs() {
                 initial={{ opacity: 0, y: 20, scale: 0.95 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
+                transition={{ duration: 0.6, delay: 0.7, ease: [0.25, 0.1, 0.25, 1] as const }}
                 className="absolute -bottom-4 right-8 flex items-center gap-3 px-5 py-3.5 rounded-[14px]"
                 style={{
                   background: "var(--svc-navy, #0F2747)",

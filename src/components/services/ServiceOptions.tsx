@@ -25,7 +25,7 @@ const fadeUp = {
   visible: (i = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, delay: i * 0.1, ease: [0.25, 0.1, 0.25, 1] },
+    transition: { duration: 0.5, delay: i * 0.1, ease: [0.25, 0.1, 0.25, 1] as const },
   }),
 };
 
@@ -82,7 +82,7 @@ export default function ServiceOptions() {
               whileInView="visible"
               viewport={{ once: true }}
               custom={i}
-              variants={{ hidden: { opacity: 0, y: 30 }, visible: (j) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: j * 0.15, ease: [0.25, 0.1, 0.25, 1] } }) }}
+              variants={{ hidden: { opacity: 0, y: 30 }, visible: (j) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: j * 0.15, ease: [0.25, 0.1, 0.25, 1] as const } }) }}
               className="bg-white rounded-[20px] overflow-hidden group cursor-default transition-all duration-500 hover:-translate-y-2.5"
               style={{ boxShadow: "0 12px 40px -12px rgba(15,39,71,0.1)" }}
             >

@@ -56,7 +56,7 @@ export default function ServiceGallery() {
               whileInView="visible"
               viewport={{ once: true }}
               custom={i}
-              variants={{ hidden: { opacity: 0, y: 30 }, visible: (j) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: j * 0.1, ease: [0.25, 0.1, 0.25, 1] } }) }}
+              variants={{ hidden: { opacity: 0, y: 30 }, visible: (j) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: j * 0.1, ease: [0.25, 0.1, 0.25, 1] as const } }) }}
               className="group rounded-[16px] overflow-hidden cursor-pointer"
               style={{ boxShadow: "0 8px 24px -8px rgba(15,39,71,0.08)" }}
             >

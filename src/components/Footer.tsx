@@ -22,7 +22,7 @@ export default function Footer() {
           <div>
             <h5 className="text-white font-heading text-sm tracking-[.06em] uppercase mb-[18px]">Services</h5>
             <ul className="space-y-[11px] text-sm">
-              <li><a href="#services" className="hover:text-white transition-colors">Block Paving</a></li>
+              <li><a href="/services/block-paving" className="hover:text-white transition-colors">Block Paving</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">Resin Driveways</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">Tarmac Driveways</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">Patios</a></li>

@@ -27,7 +27,7 @@ export default function QuoteMarketingPanel() {
       initial={{ opacity: 0, x: -40 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
+      transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] as const }}
       className="relative rounded-[28px] overflow-hidden min-h-[500px] lg:h-full flex flex-col"
     >
       {/* Background image with slow zoom */}
@@ -73,7 +73,7 @@ export default function QuoteMarketingPanel() {
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 + i * 0.12, ease: [0.25, 0.1, 0.25, 1] }}
+              transition={{ duration: 0.5, delay: 0.3 + i * 0.12, ease: [0.25, 0.1, 0.25, 1] as const }}
               className="flex items-center gap-4"
             >
               <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center shrink-0 shadow-[0_4px_14px_rgba(15,39,71,0.08)]">

@@ -24,7 +24,7 @@ export default function StepHeading({ step, total }: Props) {
       key={step}
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+      transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] as const }}
     >
       <span className="text-warm-gold text-[11px] font-bold tracking-[1.5px] uppercase block mb-3">
         Step {step + 1} of {total}
