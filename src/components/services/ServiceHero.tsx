@@ -261,7 +261,7 @@ export default function ServiceHero() {
                 <div
                   className="w-full h-[280px] lg:h-[540px]"
                   style={{
-                    backgroundImage: "url('/gallery-1.jpeg')",
+                    backgroundImage: "url('/hero-block-paving.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
