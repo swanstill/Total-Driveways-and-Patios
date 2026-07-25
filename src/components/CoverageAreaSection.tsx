@@ -88,7 +88,7 @@ const MAP_LOCATIONS = [
 
 const STATS_DATA = [
   { icon: Award, value: 20, suffix: "+", label: "Areas Covered" },
-  { icon: MapPin, value: 25, suffix: "+", label: "Years Experience" },
+  { icon: MapPin, value: 15, suffix: "+", label: "Years Experience" },
   { icon: CheckCircle, value: 1500, suffix: "+", label: "Projects Completed" },
 ];
 

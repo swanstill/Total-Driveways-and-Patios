@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Sora, Inter, Manrope, Playfair_Display } from "next/font/google";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import MobileCTA from "@/components/MobileCTA";
 import "./globals.css";
 
 const sora = Sora({
@@ -46,7 +49,12 @@ export default function RootLayout({
       lang="en"
       className={`${sora.variable} ${inter.variable} ${manrope.variable} ${playfairDisplay.variable}`}
     >
-      <body className="min-h-full flex flex-col overflow-x-hidden">{children}</body>
+      <body className="min-h-full flex flex-col overflow-x-hidden">
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
+        <MobileCTA />
+      </body>
     </html>
   );
 }
