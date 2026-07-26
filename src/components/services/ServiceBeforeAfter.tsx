@@ -80,13 +80,13 @@ export default function ServiceBeforeAfter() {
             onTouchEnd={() => setIsDragging(false)}
           >
             {/* After (full image) */}
-            <div className="absolute inset-0" style={{ background: "url('/gallery-2.jpeg') center/cover no-repeat" }} />
+            <div className="absolute inset-0" style={{ background: "url('/after-block-paving.jpeg') center/cover no-repeat" }} />
 
             {/* Before (clipped) */}
             <div
               className="absolute inset-0"
               style={{
-                background: "url('/gallery-4.jpeg') center/cover no-repeat",
+                background: "url('/before-block-paving.jpeg') center/cover no-repeat",
                 clipPath: `inset(0 ${100 - sliderPos}% 0 0)`,
               }}
             />
