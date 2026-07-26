@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const projects = [
-  { image: "/gallery-project-1.jpeg", title: "Newly Laid Patio", location: "Barnsley" },
-  { image: "/gallery-project-2.jpeg", title: "Paved Walkway & Steps", location: "Barnsley" },
-  { image: "/gallery-project-3.jpeg", title: "Patio & Garden Design", location: "Barnsley" },
-  { image: "/gallery-project-4.jpeg", title: "Resin Patio", location: "Barnsley" },
+  { image: "/gallery-project-1.jpeg", title: "Newly Laid Patio", location: "Block Paving Barnsley" },
+  { image: "/gallery-project-2.jpeg", title: "Paved Walkway & Steps", location: "Block Paving Barnsley" },
+  { image: "/gallery-project-3.jpeg", title: "Patio & Garden Design", location: "Block Paving Barnsley" },
+  { image: "/gallery-project-4.jpeg", title: "Resin Patio", location: "Block Paving Barnsley" },
 ];
 
 export default function ServiceGallery() {
