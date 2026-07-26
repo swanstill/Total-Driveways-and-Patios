@@ -71,7 +71,6 @@ export default function ServiceGallery() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
-                  <div className="text-white text-[14px] font-bold">{p.title}</div>
                   <div className="text-[12px]" style={{ color: "rgba(255,255,255,0.7)" }}>{p.location}</div>
                 </div>
               </div>
