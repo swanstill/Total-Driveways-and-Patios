@@ -222,7 +222,7 @@ export default function ServiceWhyChooseUs() {
                 <div
                   className="w-full h-[520px] lg:h-[580px] hover:scale-[1.03] transition-transform duration-700"
                   style={{
-                    backgroundImage: "url('/gallery-4.jpeg')",
+                    backgroundImage: "url('/why-choose-us.jpeg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
