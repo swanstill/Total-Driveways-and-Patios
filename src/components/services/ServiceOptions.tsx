@@ -6,12 +6,12 @@ const options = [
   {
     title: "Traditional Block Paving",
     desc: "Classic herringbone and stretcher-bond patterns in warm clay, charcoal and buff tones. Perfect for period properties and traditional homes seeking timeless kerb appeal.",
-    image: "/gallery-1.jpeg",
+    image: "/traditional-block-paving.jpeg",
   },
   {
     title: "Modern Block Paving",
     desc: "Large-format concrete blocks with clean rectilinear lines and contemporary grey, graphite and basalt finishes for a sleek, architectural appearance.",
-    image: "/gallery-2.jpeg",
+    image: "/modern-block-paving.jpeg",
   },
   {
     title: "Permeable Block Paving",
