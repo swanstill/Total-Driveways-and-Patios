@@ -46,13 +46,53 @@ export default function Header() {
             <a href="/" className="active-link">Home</a>
             <div className="relative group">
               <a href="#services" className="cursor-pointer">Services ▾</a>
-              <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <div className="bg-white rounded-[12px] shadow-[0_12px_40px_-8px_rgba(15,39,71,0.2)] border border-border py-2 min-w-[200px]">
-                  <a href="/services/block-paving" className="block px-5 py-2.5 hover:bg-cream transition-colors">Block Paving</a>
-                  <a href="/services/resin-driveways" className="block px-5 py-2.5 hover:bg-cream transition-colors">Resin Driveways</a>
-                  <a href="/services/tarmac-driveways" className="block px-5 py-2.5 hover:bg-cream transition-colors">Tarmac Driveways</a>
-                  <a href="/services/patios" className="block px-5 py-2.5 hover:bg-cream transition-colors">Patios</a>
-                  <a href="/services/landscaping" className="block px-5 py-2.5 hover:bg-cream transition-colors">Landscaping</a>
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="bg-white rounded-[16px] shadow-[0_20px_60px_-16px_rgba(15,39,71,0.25)] border border-border p-6 w-[500px]">
+                  <div className="grid grid-cols-2 gap-3">
+                    <a href="/services/block-paving" className="flex items-center gap-3 p-3.5 rounded-[12px] hover:bg-cream transition-colors group/link">
+                      <div className="w-[42px] h-[42px] rounded-[10px] flex items-center justify-center flex-shrink-0" style={{background: "rgba(15,39,71,0.06)"}}>
+                        <svg fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[20px] h-[20px] text-navy">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+                        </svg>
+                      </div>
+                      <span className="font-bold text-[15px] text-navy group-hover/link:text-gold transition-colors">Block Paving</span>
+                    </a>
+                    <a href="/services/resin-driveways" className="flex items-center gap-3 p-3.5 rounded-[12px] hover:bg-cream transition-colors group/link">
+                      <div className="w-[42px] h-[42px] rounded-[10px] flex items-center justify-center flex-shrink-0" style={{background: "rgba(15,39,71,0.06)"}}>
+                        <svg fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[20px] h-[20px] text-navy">
+                          <circle cx="12" cy="12" r="9" />
+                          <circle cx="12" cy="12" r="4" />
+                          <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none" />
+                        </svg>
+                      </div>
+                      <span className="font-bold text-[15px] text-navy group-hover/link:text-gold transition-colors">Resin Driveways</span>
+                    </a>
+                    <a href="/services/tarmac-driveways" className="flex items-center gap-3 p-3.5 rounded-[12px] hover:bg-cream transition-colors group/link">
+                      <div className="w-[42px] h-[42px] rounded-[10px] flex items-center justify-center flex-shrink-0" style={{background: "rgba(15,39,71,0.06)"}}>
+                        <svg fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[20px] h-[20px] text-navy">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M3 12h3l2-5 3 10 3-7 2 4h5" />
+                        </svg>
+                      </div>
+                      <span className="font-bold text-[15px] text-navy group-hover/link:text-gold transition-colors">Tarmac Driveways</span>
+                    </a>
+                    <a href="/services/patios" className="flex items-center gap-3 p-3.5 rounded-[12px] hover:bg-cream transition-colors group/link">
+                      <div className="w-[42px] h-[42px] rounded-[10px] flex items-center justify-center flex-shrink-0" style={{background: "rgba(15,39,71,0.06)"}}>
+                        <svg fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[20px] h-[20px] text-navy">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M4 8h6v12H4zM14 4h6v16h-6z" />
+                        </svg>
+                      </div>
+                      <span className="font-bold text-[15px] text-navy group-hover/link:text-gold transition-colors">Patios</span>
+                    </a>
+                    <a href="/services/landscaping" className="flex items-center gap-3 p-3.5 rounded-[12px] hover:bg-cream transition-colors col-span-2 group/link">
+                      <div className="w-[42px] h-[42px] rounded-[10px] flex items-center justify-center flex-shrink-0" style={{background: "rgba(15,39,71,0.06)"}}>
+                        <svg fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[20px] h-[20px] text-navy">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 19V5m0 0l-3 3m3-3l3 3" />
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" />
+                        </svg>
+                      </div>
+                      <span className="font-bold text-[15px] text-navy group-hover/link:text-gold transition-colors">Landscaping</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
