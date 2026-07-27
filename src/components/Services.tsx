@@ -82,14 +82,6 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="text-center mt-11">
-          <a href="#quote" className="btn btn-outline">
-            View all services
-            <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="w-[17px] h-[17px] flex-shrink-0">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
-            </svg>
-          </a>
-        </div>
       </div>
     </section>
   );
