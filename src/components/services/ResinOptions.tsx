@@ -6,17 +6,17 @@ const options = [
   {
     title: "Resin-Bound Surfacing",
     desc: "A smooth, porous surface made by mixing natural aggregates with UV-stable resin and trowelling in place. Ideal for driveways, patios and pathways where a seamless, SUDS-compliant finish is desired.",
-    image: "/gallery-5.jpeg",
+    image: "/resin-bound.jpg",
   },
   {
     title: "Resin-Bonded Surfacing",
     desc: "Natural aggregates bonded onto a resin base layer using a scatter-coat technique. Perfect for decorative finishes on paths, drives and entrances where a textured, natural stone appearance is preferred.",
-    image: "/gallery-1.jpeg",
+    image: "/resin-bonded.jpg",
   },
   {
     title: "Decorative Resin Designs",
     desc: "Custom patterns, borders, and colour blends using contrasting aggregates. Create a unique driveway that complements your home's architecture with bespoke resin features and edging details.",
-    image: "/gallery-2.jpeg",
+    image: "/resin-decorative.jpg",
   },
 ];
 

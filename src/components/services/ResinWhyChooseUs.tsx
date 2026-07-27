@@ -227,7 +227,7 @@ export default function ResinWhyChooseUs() {
                 <div
                   className="w-full h-[520px] lg:h-[580px] hover:scale-[1.03] transition-transform duration-700"
                   style={{
-                    backgroundImage: "url('/resin-driveway.jpg')",
+                    backgroundImage: "url('/resin-why-choose-us.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
