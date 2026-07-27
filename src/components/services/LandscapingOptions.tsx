@@ -11,12 +11,12 @@ const options = [
   {
     title: "Paths & Access Routes",
     desc: "Connect doors, gates, sheds and seating areas with stable, practical routes that remain usable in wet weather and coordinate with the wider garden.",
-    image: "/gallery-1.jpeg",
+    image: "/gallery-4.jpeg",
   },
   {
     title: "Turf & Lawn Areas",
     desc: "Replace worn or uneven ground with prepared turf, or discuss low-maintenance alternatives where natural lawn is not appropriate for the space.",
-    image: "/gallery-4.jpeg",
+    image: "/gallery-1.jpeg",
   },
 ];
 
