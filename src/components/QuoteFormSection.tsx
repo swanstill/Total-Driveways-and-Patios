@@ -219,13 +219,13 @@ export default function QuoteFormSection() {
           transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const }}
           className="flex flex-col lg:flex-row items-stretch"
         >
-          {/* Left panel */}
-          <div className="w-full lg:w-[36%] lg:min-w-[36%]">
+          {/* Left panel — second visually on mobile via order */}
+          <div className="w-full lg:w-[36%] lg:min-w-[36%] order-2 lg:order-1">
             <QuoteMarketingPanel />
           </div>
 
-          {/* Right panel */}
-          <div className="w-full lg:w-[64%] relative lg:-ml-5 lg:z-10 flex">
+          {/* Right panel — first visually on mobile so #quote lands on the form */}
+          <div className="w-full lg:w-[64%] relative lg:-ml-5 lg:z-10 flex order-1 lg:order-2">
             <motion.div
               initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
