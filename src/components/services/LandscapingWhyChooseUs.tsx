@@ -175,7 +175,7 @@ export default function LandscapingWhyChooseUs() {
                 <div
                   className="w-full h-[520px] lg:h-[580px] hover:scale-[1.03] transition-transform duration-700"
                   style={{
-                    backgroundImage: "url('/landscaping.jpg')",
+                    backgroundImage: "url('/landscaping-why-choose-us.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
