@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-white/10 pt-6 flex justify-between flex-wrap gap-3 text-[13px] text-[#8891A5]">
           <span>&copy; 2026 Total Driveways and Patios. All rights reserved.</span>
-          <span>Website design with ♥ by <a href="https://www.tradesgrow.co.uk/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Trades Grow</a></span>
+          <span>Website design with <span style={{color: "#C79A3C"}}>♥</span> by <a href="https://www.tradesgrow.co.uk/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Trades Grow</a></span>
         </div>
       </div>
     </footer>
