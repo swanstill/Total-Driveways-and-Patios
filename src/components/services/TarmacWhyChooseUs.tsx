@@ -227,7 +227,7 @@ export default function TarmacWhyChooseUs() {
                 <div
                   className="w-full h-[520px] lg:h-[580px] hover:scale-[1.03] transition-transform duration-700"
                   style={{
-                    backgroundImage: "url('/tarmac.jpg')",
+                    backgroundImage: "url('/tarmac-why-choose-us.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

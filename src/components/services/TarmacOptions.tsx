@@ -6,17 +6,17 @@ const options = [
   {
     title: "Classic Black Tarmac",
     desc: "A clean black surface is the traditional option for driveways, access areas and paths. It creates a simple, understated finish and works well where practicality is the priority.",
-    image: "/tarmac.jpg",
+    image: "/tarmac-classic-black.jpg",
   },
   {
     title: "Block-Edged Tarmac",
     desc: "A border in charcoal, brindle or another block-paving colour frames the surface, strengthens the visual edge and helps connect the driveway to paths, steps or the brickwork of the house.",
-    image: "/gallery-1.jpeg",
+    image: "/tarmac-block-edged.jpg",
   },
   {
     title: "Paths & Larger Areas",
     desc: "The continuous finish makes tarmac suitable for domestic paths, shared access, parking areas and larger spaces where individually laid paving would be less practical.",
-    image: "/gallery-2.jpeg",
+    image: "/tarmac-paths-areas.jpg",
   },
 ];
 

@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const projects = [
-  { image: "/tarmac.jpg", title: "Block-Edged Tarmac Driveway", location: "Barnsley" },
-  { image: "/gallery-2.jpeg", title: "Black Tarmac with Border Detail", location: "Barnsley" },
-  { image: "/gallery-1.jpeg", title: "Tarmac Access Area & Parking", location: "Barnsley" },
-  { image: "/gallery-5.jpeg", title: "Tarmac Path & Driveway Combo", location: "Barnsley" },
+  { image: "/tarmac-gallery-1.jpg", title: "Block-Edged Tarmac Driveway", location: "Tarmac Driveway Barnsley" },
+  { image: "/tarmac-gallery-2.jpg", title: "Black Tarmac with Border Detail", location: "Tarmac Driveway Barnsley" },
+  { image: "/tarmac-gallery-4.jpg", title: "Tarmac Access Area & Parking", location: "Tarmac Driveway Barnsley" },
+  { image: "/tarmac-gallery-6.jpg", title: "Tarmac Path & Driveway Combo", location: "Tarmac Driveway Barnsley" },
 ];
 
 export default function TarmacGallery() {
