@@ -146,12 +146,36 @@ export default function Gallery() {
           ))}
         </div>
 
-        {/* Row 2 — 2 sliders, leave 3rd empty */}
+        {/* Row 2 — 2 sliders + CTA card */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[18px]">
           {slides.slice(3).map((s) => (
             <BeforeAfterSlider key={s.label} {...s} />
           ))}
-          <div />
+          <a
+            href="#quote"
+            className="relative rounded-[16px] overflow-hidden shadow-card w-full flex flex-col items-center justify-center text-center p-6 group"
+            style={{ aspectRatio: "16/10", background: "linear-gradient(135deg, #0F2747 0%, #1A3A5C 100%)" }}
+          >
+            {/* Decorative gold accent */}
+            <div
+              className="absolute top-0 left-0 right-0 h-[3px] opacity-80"
+              style={{ background: "linear-gradient(90deg, transparent, var(--color-gold, #C79A3C), transparent)" }}
+            />
+            <div className="relative z-10">
+              <svg fill="none" stroke="var(--color-gold, #C79A3C)" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[36px] h-[36px] mx-auto mb-3 opacity-80 group-hover:scale-110 transition-transform duration-300">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-6-6h12" />
+              </svg>
+              <span className="text-[13px] font-bold tracking-[0.12em] uppercase" style={{ color: "var(--color-gold, #C79A3C)" }}>
+                Start Your Project
+              </span>
+              <p className="text-white/70 text-[13px] mt-2 max-w-[20ch] leading-relaxed mx-auto">
+                Ready for your own transformation? Get a free quote today.
+              </p>
+              <span className="inline-block mt-4 text-[12px] font-bold text-white bg-gold px-4 py-2 rounded-[6px] group-hover:brightness-110 transition-all">
+                Get a free quote →
+              </span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
