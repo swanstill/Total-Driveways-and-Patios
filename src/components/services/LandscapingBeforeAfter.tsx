@@ -51,8 +51,8 @@ export default function LandscapingBeforeAfter() {
             onTouchMove={handleTouchMove}
             onTouchEnd={() => setIsDragging(false)}
           >
-            <div className="absolute inset-0" style={{ background: "url('/gallery-3.jpeg') center/cover no-repeat" }} />
-            <div className="absolute inset-0" style={{ background: "url('/gallery-5.jpeg') center/cover no-repeat", clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }} />
+            <div className="absolute inset-0" style={{ background: "url('/landscaping-before.jpg') center/cover no-repeat" }} />
+            <div className="absolute inset-0" style={{ background: "url('/landscaping-after.jpg') center/cover no-repeat", clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }} />
             <div className="absolute top-0 bottom-0 w-[3px] z-10 pointer-events-none" style={{ left: `${sliderPos}%`, background: "var(--svc-gold)" }} />
             <div className="absolute z-10 w-[44px] h-[44px] rounded-full pointer-events-none flex items-center justify-center -translate-x-1/2 -translate-y-1/2" style={{ left: `${sliderPos}%`, top: "50%", background: "var(--svc-gold)", boxShadow: "0 4px 16px rgba(200,155,74,0.4)" }}>
               <svg viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" className="w-[18px] h-[18px]">
