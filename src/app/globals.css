@@ -32,6 +32,8 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  --svc-gold: #C89B4A;
+  --svc-navy: #0F2747;
 }
 
 body {
