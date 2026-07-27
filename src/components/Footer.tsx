@@ -16,7 +16,7 @@ export default function Footer() {
               />
             </div>
             <p className="max-w-[32ch] text-sm leading-relaxed">
-              Family-run driveway, patio and landscaping specialists serving Barnsley and South Yorkshire since 1990.
+              Family-run driveway, patio and landscaping specialists serving Barnsley and South Yorkshire, established 2026.
             </p>
           </div>
           <div>
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-white/10 pt-6 flex justify-between flex-wrap gap-3 text-[13px] text-[#8891A5]">
           <span>&copy; 2026 Total Driveways and Patios. All rights reserved.</span>
-          <span>Family-run since 1990 · Rated 5.0 on Google</span>
+          <span>Family-run established 2026 · Rated 5.0 on Google</span>
         </div>
       </div>
     </footer>

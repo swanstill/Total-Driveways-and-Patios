@@ -170,7 +170,7 @@ export default function Gallery() {
                 <svg fill="none" stroke="var(--color-gold, #C79A3C)" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[28px] h-[28px] shrink-0">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span className="text-[15px] font-bold text-white">Family-run since 1990</span>
+                <span className="text-[15px] font-bold text-white">Family-run established 2026</span>
               </div>
               <div className="flex items-center gap-4">
                 <svg fill="none" stroke="var(--color-gold, #C79A3C)" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[28px] h-[28px] shrink-0">

@@ -10,7 +10,7 @@ const badges = [
   },
   {
     label: "15 Years Experience",
-    desc: "Family-run since 1990",
+    desc: "Family-run established 2026",
     icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
   },
   {

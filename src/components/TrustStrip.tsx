@@ -18,7 +18,7 @@ export default function TrustStrip() {
           <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="w-[22px] h-[22px] text-gold flex-shrink-0">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          Family-run since 1990
+          Family-run established 2026
         </div>
         <div className="flex items-center gap-3 text-[#EDE7D8] text-[14.5px] font-semibold">
           <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="w-[22px] h-[22px] text-gold flex-shrink-0">
