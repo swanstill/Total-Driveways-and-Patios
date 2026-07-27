@@ -5,6 +5,7 @@ import Image from "next/image";
 
 export default function Header() {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
     <>
@@ -85,12 +86,24 @@ export default function Header() {
               </svg>
             </button>
             <a href="/" onClick={() => setDrawerOpen(false)}>Home</a>
-            <a href="#services" onClick={() => setDrawerOpen(false)}>Services ▸</a>
-            <a href="/services/block-paving" onClick={() => setDrawerOpen(false)} className="pl-6 text-[14px] opacity-75">— Block Paving</a>
-            <a href="/services/resin-driveways" onClick={() => setDrawerOpen(false)} className="pl-6 text-[14px] opacity-75">— Resin Driveways</a>
-            <a href="/services/tarmac-driveways" onClick={() => setDrawerOpen(false)} className="pl-6 text-[14px] opacity-75">— Tarmac Driveways</a>
-            <a href="/services/patios" onClick={() => setDrawerOpen(false)} className="pl-6 text-[14px] opacity-75">— Patios</a>
-            <a href="/services/landscaping" onClick={() => setDrawerOpen(false)} className="pl-6 text-[14px] opacity-75">— Landscaping</a>
+            <button
+              className="flex items-center justify-between w-full bg-none border-none cursor-pointer font-bold text-navy text-[17px] py-1"
+              onClick={() => setServicesOpen(!servicesOpen)}
+            >
+              Services
+              <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className={`w-[18px] h-[18px] transition-transform duration-200 ${servicesOpen ? "rotate-90" : ""}`}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+            {servicesOpen && (
+              <div className="flex flex-col gap-2 pl-6 border-l-2" style={{ borderColor: "rgba(200,155,74,0.3)" }}>
+                <a href="/services/block-paving" onClick={() => setDrawerOpen(false)} className="text-[14px] opacity-80 hover:opacity-100 transition-opacity">Block Paving</a>
+                <a href="/services/resin-driveways" onClick={() => setDrawerOpen(false)} className="text-[14px] opacity-80 hover:opacity-100 transition-opacity">Resin Driveways</a>
+                <a href="/services/tarmac-driveways" onClick={() => setDrawerOpen(false)} className="text-[14px] opacity-80 hover:opacity-100 transition-opacity">Tarmac Driveways</a>
+                <a href="/services/patios" onClick={() => setDrawerOpen(false)} className="text-[14px] opacity-80 hover:opacity-100 transition-opacity">Patios</a>
+                <a href="/services/landscaping" onClick={() => setDrawerOpen(false)} className="text-[14px] opacity-80 hover:opacity-100 transition-opacity">Landscaping</a>
+              </div>
+            )}
             <a href="#gallery" onClick={() => setDrawerOpen(false)}>Gallery</a>
             <a href="#reviews" onClick={() => setDrawerOpen(false)}>Reviews</a>
             <a href="/contact" onClick={() => setDrawerOpen(false)}>Contact</a>
