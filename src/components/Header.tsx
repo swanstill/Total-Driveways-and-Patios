@@ -95,7 +95,7 @@ export default function Header() {
                         <div className="text-[12px] leading-snug text-slate/70 mt-0.5">Porcelain, sandstone or Indian stone paving for gardens, seating areas and pathways.</div>
                       </div>
                     </a>
-                    <a href="/services/landscaping" className="flex items-start gap-3 p-3.5 rounded-[12px] hover:bg-cream transition-colors col-span-2 group/link">
+                    <a href="/services/landscaping" className="flex items-start gap-3 p-3.5 rounded-[12px] hover:bg-cream transition-colors group/link">
                       <div className="w-[42px] h-[42px] rounded-[10px] flex items-center justify-center flex-shrink-0 mt-0.5" style={{background: "rgba(15,39,71,0.06)"}}>
                         <svg fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[20px] h-[20px] text-navy">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M12 19V5m0 0l-3 3m3-3l3 3" />
