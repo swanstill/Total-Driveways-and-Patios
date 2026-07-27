@@ -213,18 +213,32 @@ section {
 .mobile-drawer .panel {
   position: absolute;
   top: 0;
+  left: 0;
   right: 0;
-  bottom: 0;
-  width: 78%;
-  max-width: 320px;
   background: #fff;
-  padding: 28px 24px;
+  padding: 28px 24px 36px;
   display: flex;
   flex-direction: column;
   gap: 22px;
+  animation: slideDown 0.3s ease-out;
+  box-shadow: 0 20px 60px -12px rgba(15,39,71,0.2);
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
-.mobile-drawer .panel a {
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.mobile-drawer .panel a,
+.mobile-drawer .panel button {
   font-weight: 700;
   color: var(--color-navy);
   font-size: 17px;
