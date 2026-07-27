@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const projects = [
-  { image: "/landscaping.jpg", title: "Garden Landscaping with Patio & Lawn", location: "Barnsley" },
-  { image: "/gallery-2.jpeg", title: "Porcelain Patio & Seating Area", location: "Barnsley" },
-  { image: "/gallery-4.jpeg", title: "Pathway & Garden Access Route", location: "Barnsley" },
-  { image: "/gallery-5.jpeg", title: "Block Paving & Garden Border", location: "Barnsley" },
+  { image: "/landscaping-gallery-1.jpg", title: "Garden Landscaping with Patio & Lawn", location: "Barnsley" },
+  { image: "/landscaping-gallery-2.jpg", title: "Porcelain Patio & Seating Area", location: "Barnsley" },
+  { image: "/landscaping-gallery-3.jpg", title: "Pathway & Garden Access Route", location: "Barnsley" },
+  { image: "/landscaping-gallery-4.jpg", title: "Block Paving & Garden Border", location: "Barnsley" },
 ];
 
 export default function LandscapingGallery() {
