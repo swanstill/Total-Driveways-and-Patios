@@ -6,7 +6,7 @@ const options = [
   {
     title: "Patios & Seating Areas",
     desc: "Create defined areas for dining, relaxing or entertaining using porcelain, sandstone, block paving or other suitable materials that suit your home.",
-    image: "/gallery-2.jpeg",
+    image: "/indian-sandstone.jpg",
   },
   {
     title: "Paths & Access Routes",
