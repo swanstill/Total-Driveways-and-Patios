@@ -228,35 +228,18 @@ export default function PrivacyPolicyPage() {
             </a>.
           </p>
 
-        </div>
-      </div>
-
-      {/* Cookie Notice — full width */}
-      <div className="w-full py-[80px] px-6" style={{ background: "#F7F4EE" }}>
-        <div className="max-w-[800px] mx-auto">
+          {/* Section 8 */}
           <h2
-            className="text-[22px] font-bold mb-4"
+            className="text-[22px] font-bold mt-12 mb-4"
             style={{ color: "var(--svc-heading, #0F2747)", fontFamily: "var(--font-manrope), sans-serif" }}
           >
             8. Cookies
           </h2>
-          <p className="text-[15.5px] leading-relaxed mb-6" style={{ color: "var(--svc-body, #4a5568)", fontFamily: "var(--font-inter), sans-serif" }}>
+          <p className="text-[15.5px] leading-relaxed mb-6">
             Our website may use cookies and similar tracking technologies to enhance your browsing
             experience and analyse website traffic. You can control cookie preferences through your
             browser settings. For more information, please refer to our Cookie Policy.
           </p>
-        </div>
-      </div>
-
-      {/* Content continued */}
-      <div className="max-w-[800px] mx-auto px-6 py-[80px]">
-        <div
-          className="prose prose-lg max-w-none"
-          style={{
-            color: "var(--svc-body, #4a5568)",
-            fontFamily: "var(--font-inter), sans-serif",
-          }}
-        >
 
           {/* Section 9 */}
           <h2

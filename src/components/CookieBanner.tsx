@@ -42,7 +42,7 @@ export default function CookieBanner() {
         style={{ pointerEvents: "none" }}
       >
         <div
-          className="mx-4 mb-4 md:mx-6 md:mb-6 max-w-[720px] md:mx-auto p-5 md:p-6 rounded-[16px] shadow-2xl"
+          className="mx-0 mb-0 md:mx-0 md:mb-0 w-full p-5 md:p-6 shadow-2xl rounded-none"
           style={{
             background: "var(--svc-deep-navy, #08213F)",
             pointerEvents: "auto",
