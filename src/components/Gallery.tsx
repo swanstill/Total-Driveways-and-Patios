@@ -93,12 +93,57 @@ export default function Gallery() {
   return (
     <section id="gallery" className="!bg-white">
       <div className="wrap">
+        {/* Heading */}
         <div className="max-w-[640px] mx-auto text-center mb-14">
           <span className="eyebrow">Recent projects</span>
           <h2 className="text-[clamp(28px,3.2vw,40px)] mb-4">
-            Before & after transformations<span className="dot">.</span>
+            Real work, done properly<span className="dot">.</span>
           </h2>
-          <p>Drag the slider on each image to compare the before and after of our recent projects across Barnsley and South Yorkshire.</p>
+          <p>A balanced mix of completed driveways, patios and garden transformations across Barnsley and South Yorkshire.</p>
+        </div>
+
+        {/* Image Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr] md:grid-rows-[1fr_1fr] gap-[18px] mb-[60px]">
+          {/* Large item */}
+          <div className="relative md:row-span-2 md:col-span-1 rounded-[16px] overflow-hidden shadow-card aspect-[16/9] md:aspect-auto">
+            <img src="/gallery-1.jpeg" alt="Newly laid patio" className="w-full h-full min-h-[300px] md:min-h-full object-cover" />
+            <div className="absolute left-0 right-0 bottom-0 p-4 text-sm font-semibold text-white bg-gradient-to-t from-[rgba(16,24,48,.82)] to-[rgba(16,24,48,0)]">
+              Newly laid patio with natural stone flags and a clean, level finish.
+            </div>
+          </div>
+          <div className="relative rounded-[16px] overflow-hidden shadow-card aspect-[16/9] md:aspect-auto">
+            <img src="/gallery-2.jpeg" alt="Paved walkway with steps" className="w-full h-full object-cover" />
+            <div className="absolute left-0 right-0 bottom-0 p-4 text-sm font-semibold text-white bg-gradient-to-t from-[rgba(16,24,48,.82)] to-[rgba(16,24,48,0)]">
+              Paved walkway with coordinated steps, creating a welcoming entrance to the garden.
+            </div>
+          </div>
+          <div className="relative rounded-[16px] overflow-hidden shadow-card aspect-[16/9] md:aspect-auto">
+            <img src="/gallery-3.jpeg" alt="Resin patio" className="w-full h-full object-cover" />
+            <div className="absolute left-0 right-0 bottom-0 p-4 text-sm font-semibold text-white bg-gradient-to-t from-[rgba(16,24,48,.82)] to-[rgba(16,24,48,0)]">
+              Resin patio surface with a smooth, modern finish.
+            </div>
+          </div>
+          <div className="relative rounded-[16px] overflow-hidden shadow-card aspect-[16/9] md:aspect-auto">
+            <img src="/gallery-4.jpeg" alt="Patio and garden landscaping" className="w-full h-full object-cover" />
+            <div className="absolute left-0 right-0 bottom-0 p-4 text-sm font-semibold text-white bg-gradient-to-t from-[rgba(16,24,48,.82)] to-[rgba(16,24,48,0)]">
+              Patio and garden transformation with new paving and planting areas.
+            </div>
+          </div>
+          <div className="relative rounded-[16px] overflow-hidden shadow-card aspect-[16/9] md:aspect-auto">
+            <img src="/gallery-5.jpeg" alt="Resin-bound driveway" className="w-full h-full object-cover" />
+            <div className="absolute left-0 right-0 bottom-0 p-4 text-sm font-semibold text-white bg-gradient-to-t from-[rgba(16,24,48,.82)] to-[rgba(16,24,48,0)]">
+              Resin-bound driveway with a durable, low-maintenance finish.
+            </div>
+          </div>
+        </div>
+
+        {/* Before/After Sliders */}
+        <div className="max-w-[640px] mx-auto text-center mb-12">
+          <span className="eyebrow">See the difference</span>
+          <h2 className="text-[clamp(28px,3.2vw,40px)] mb-4">
+            Before & after<span className="dot">.</span>
+          </h2>
+          <p>Drag the slider on each image to compare the before and after of our recent projects.</p>
         </div>
 
         {/* Row 1 — 3 sliders */}
