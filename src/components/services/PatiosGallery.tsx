@@ -42,8 +42,7 @@ export default function PatiosGallery() {
                 <div className="w-full h-full group-hover:scale-105 transition-transform duration-700" style={{ backgroundImage: `url('${p.image}')`, backgroundSize: "cover", backgroundPosition: "center" }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
-                  <div className="text-white text-[14px] font-bold">{p.title}</div>
-                  <div className="text-[12px]" style={{ color: "rgba(255,255,255,0.7)" }}>{p.location}</div>
+                  <div className="text-white text-[14px] font-bold">Patio Driveway Barnsley</div>
                 </div>
               </div>
             </motion.div>
