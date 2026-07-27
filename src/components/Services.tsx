@@ -1,30 +1,37 @@
+import Link from "next/link";
+
 const services = [
   {
     title: "Block Paving",
+    href: "/services/block-paving",
     description:
       "A timeless, versatile choice with a wide range of colours, patterns and finishes, arranged in herringbone or bordered layouts to suit your home.",
     image: "/block-paving.jpg",
   },
   {
     title: "Resin Driveways",
+    href: "/services/resin-driveways",
     description:
       "Smooth, permeable and low-maintenance, resin-bound surfaces combine decorative aggregate with clear resin for a comfortable, contemporary finish.",
     image: "/resin-driveway.jpg",
   },
   {
     title: "Tarmac Driveways",
+    href: "/services/tarmac-driveways",
     description:
       "A durable, cost-effective solution installed to a high standard, ideal for larger areas or a clean, smart finish at a sensible price.",
     image: "/tarmac.jpg",
   },
   {
     title: "Patios",
+    href: "/services/patios",
     description:
       "Beautifully designed patios in porcelain, sandstone or natural stone, creating the perfect space for relaxing and entertaining outdoors.",
     image: "/patios.jpg",
   },
   {
     title: "Landscaping",
+    href: "/services/landscaping",
     description:
       "Complete landscaping solutions bringing paving, turf, fencing and planting together as one coordinated project that adds value to your property.",
     image: "/landscaping.jpg",
@@ -47,9 +54,10 @@ export default function Services() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-5 gap-[22px]">
           {services.map((s) => (
-            <div
+            <Link
               key={s.title}
-              className="bg-white rounded-[20px] overflow-hidden shadow-card flex flex-col transition-all duration-[180ms] hover:-translate-y-[6px] hover:shadow-card-hover"
+              href={s.href}
+              className="bg-white rounded-[20px] overflow-hidden shadow-card flex flex-col transition-all duration-[180ms] hover:-translate-y-[6px] hover:shadow-card-hover cursor-pointer"
             >
               <div className="h-[150px] relative overflow-hidden">
                 <img src={s.image} alt={s.title} className="w-full h-full object-cover" />
@@ -57,10 +65,7 @@ export default function Services() {
               <div className="pt-[38px] px-[22px] pb-6 flex-1 flex flex-col">
                 <h3 className="text-lg mb-[10px]">{s.title}</h3>
                 <p className="text-[14.5px] flex-1 leading-relaxed">{s.description}</p>
-                <a
-                  href="#quote"
-                  className="mt-4 text-gold-dark font-bold text-sm inline-flex items-center gap-[6px] group"
-                >
+                <span className="mt-4 text-gold-dark font-bold text-sm inline-flex items-center gap-[6px] group">
                   Explore {s.title.toLowerCase()}{" "}
                   <svg
                     fill="none"
@@ -71,9 +76,9 @@ export default function Services() {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
                   </svg>
-                </a>
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
