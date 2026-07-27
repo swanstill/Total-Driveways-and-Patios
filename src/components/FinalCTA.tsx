@@ -1,6 +1,6 @@
 export default function FinalCTA() {
   return (
-    <section id="final-cta" className="bg-white">
+    <section id="final-cta" className="bg-white pb-[60px] lg:pb-0">
       <div className="wrap">
         <div className="bg-navy rounded-[28px] py-[72px] px-10 text-center relative overflow-hidden">
           {/* Gradient overlay */}

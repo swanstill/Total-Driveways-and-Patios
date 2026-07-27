@@ -51,7 +51,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col overflow-x-hidden">
         <Header />
-        <main className="flex-1 pb-[60px] lg:pb-0">{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
         <ServiceMobileCTA />
       </body>
