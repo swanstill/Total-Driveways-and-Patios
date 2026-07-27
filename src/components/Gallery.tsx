@@ -152,32 +152,32 @@ export default function Gallery() {
             <BeforeAfterSlider key={s.label} {...s} />
           ))}
           <div
-            className="relative rounded-[16px] overflow-hidden shadow-card w-full flex flex-col items-center justify-center text-center p-5"
+            className="relative rounded-[16px] overflow-hidden shadow-card w-full flex flex-col items-start justify-center p-6"
             style={{ aspectRatio: "16/10", background: "linear-gradient(135deg, #0F2747 0%, #1A3A5C 100%)" }}
           >
             <div
               className="absolute top-0 left-0 right-0 h-[3px] opacity-80"
               style={{ background: "linear-gradient(90deg, transparent, var(--color-gold, #C79A3C), transparent)" }}
             />
-            <div className="relative z-10 space-y-4">
-              <div className="flex items-center justify-center gap-3">
-                <svg fill="none" stroke="var(--color-gold, #C79A3C)" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[22px] h-[22px]">
+            <div className="relative z-10 flex flex-col gap-5 w-full">
+              <div className="flex items-center gap-4">
+                <svg fill="none" stroke="var(--color-gold, #C79A3C)" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[28px] h-[28px] shrink-0">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span className="text-[12px] font-bold text-white">Fully Insured</span>
+                <span className="text-[15px] font-bold text-white">Fully Insured</span>
               </div>
-              <div className="flex items-center justify-center gap-3">
-                <svg fill="none" stroke="var(--color-gold, #C79A3C)" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[22px] h-[22px]">
+              <div className="flex items-center gap-4">
+                <svg fill="none" stroke="var(--color-gold, #C79A3C)" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[28px] h-[28px] shrink-0">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span className="text-[12px] font-bold text-white">Family-run since 1990</span>
+                <span className="text-[15px] font-bold text-white">Family-run since 1990</span>
               </div>
-              <div className="flex items-center justify-center gap-3">
-                <svg fill="none" stroke="var(--color-gold, #C79A3C)" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[22px] h-[22px]">
+              <div className="flex items-center gap-4">
+                <svg fill="none" stroke="var(--color-gold, #C79A3C)" strokeWidth="1.5" viewBox="0 0 24 24" className="w-[28px] h-[28px] shrink-0">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span className="text-[12px] font-bold text-white">Free Site Survey</span>
+                <span className="text-[15px] font-bold text-white">Free Site Survey</span>
               </div>
             </div>
           </div>
