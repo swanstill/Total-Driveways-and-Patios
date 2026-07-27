@@ -101,7 +101,7 @@ export default function StepContact({ register, errors, consentValue, submitting
           </div>
           <span className="text-[13.5px] text-dark-text/70 leading-snug">
             I agree that Total Driveways and Patios may use these details to contact me about this enquiry.
-            <a href="/privacy" className="text-navy-primary font-semibold underline-offset-2 hover:underline ml-1">
+            <a href="/privacy-policy" className="text-navy-primary font-semibold underline-offset-2 hover:underline ml-1">
               Privacy policy
             </a>
           </span>

@@ -327,7 +327,7 @@ export default function ContactHero() {
                 </div>
                 <div>
                   <span className="text-white text-[13px] font-bold block" style={{ letterSpacing: "-0.01em" }}>
-                    Family-Run Since 1990
+                    Family-Run Established 2026
                   </span>
                   <span className="text-[11px]" style={{ color: "rgba(255,255,255,0.5)" }}>
                     Rated 5.0 on Google
