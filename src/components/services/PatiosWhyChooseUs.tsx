@@ -176,7 +176,7 @@ export default function PatiosWhyChooseUs() {
                 <div
                   className="w-full h-[520px] lg:h-[580px] hover:scale-[1.03] transition-transform duration-700"
                   style={{
-                    backgroundImage: "url('/patios.jpg')",
+                    backgroundImage: "url('/patios-why-choose-us.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

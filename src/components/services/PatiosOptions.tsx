@@ -6,17 +6,17 @@ const options = [
   {
     title: "Porcelain Paving",
     desc: "Clean, consistent finish with accurately sized slabs and low water absorption. Available in stone, concrete and timber-effect designs. Ideal for modern gardens and contemporary homes.",
-    image: "/gallery-2.jpeg",
+    image: "/patios-porcelain.jpg",
   },
   {
     title: "Indian Sandstone",
     desc: "Natural variation with warm mixed tones and a more traditional texture. Every slab is slightly different, giving your patio genuine character and a timeless, organic appearance.",
-    image: "/gallery-1.jpeg",
+    image: "/patios-sandstone.jpg",
   },
   {
     title: "Slate & Block Paving",
     desc: "Deep blue-grey or charcoal slate for a distinctive textured look, or modular block paving for curves and coordinated driveway-and-garden schemes. Versatile options for any style.",
-    image: "/gallery-5.jpeg",
+    image: "/patios-slate-block.jpg",
   },
 ];
 

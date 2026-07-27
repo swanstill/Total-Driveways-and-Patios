@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const projects = [
-  { image: "/patios.jpg", title: "Sandstone Patio with Border", location: "Barnsley" },
-  { image: "/gallery-1.jpeg", title: "Porcelain Patio & Garden Design", location: "Barnsley" },
-  { image: "/gallery-4.jpeg", title: "Natural Stone Patio & Steps", location: "Barnsley" },
-  { image: "/gallery-5.jpeg", title: "Patio with Block Border Detail", location: "Barnsley" },
+  { image: "/patios-gallery-1.jpg", title: "Sandstone Patio with Border", location: "Barnsley" },
+  { image: "/patios-gallery-3.jpg", title: "Porcelain Patio & Garden Design", location: "Barnsley" },
+  { image: "/patios-gallery-4.jpg", title: "Natural Stone Patio & Steps", location: "Barnsley" },
+  { image: "/patios-gallery-5.jpg", title: "Patio with Block Border Detail", location: "Barnsley" },
 ];
 
 export default function PatiosGallery() {
