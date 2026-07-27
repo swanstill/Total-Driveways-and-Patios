@@ -56,7 +56,7 @@ export default function PatiosBeforeAfter() {
             <div className="absolute top-0 bottom-0 w-[3px] z-10 pointer-events-none" style={{ left: `${sliderPos}%`, background: "var(--svc-gold)" }} />
             <div className="absolute z-10 w-[44px] h-[44px] rounded-full pointer-events-none flex items-center justify-center -translate-x-1/2 -translate-y-1/2" style={{ left: `${sliderPos}%`, top: "50%", background: "var(--svc-gold)", boxShadow: "0 4px 16px rgba(200,155,74,0.4)" }}>
               <svg viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" className="w-[18px] h-[18px]">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M8 7l4-4m0 0l4 4m-4-4v18M4 17l4 4m-4-4h16" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7M9 5l7 7-7 7" />
               </svg>
             </div>
             <div className="absolute bottom-4 left-4 z-10 text-[11px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-[8px]" style={{ background: "rgba(8,33,63,0.8)", color: "rgba(255,255,255,0.85)" }}>Before</div>

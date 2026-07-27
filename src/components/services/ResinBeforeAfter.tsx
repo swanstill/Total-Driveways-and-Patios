@@ -106,7 +106,7 @@ export default function ResinBeforeAfter() {
               }}
             >
               <svg viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" className="w-[18px] h-[18px]">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M8 7l4-4m0 0l4 4m-4-4v18M4 17l4 4m-4-4h16" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7M9 5l7 7-7 7" />
               </svg>
             </div>
 
