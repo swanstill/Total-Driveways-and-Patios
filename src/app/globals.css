@@ -425,6 +425,11 @@ section {
   transition: width 0.1s linear;
 }
 
+/* Hide homepage MobileCTA on service pages */
+body.service-page .home-mobile-cta {
+  display: none;
+}
+
 /* Sticky CTA */
 .svc-sticky-cta {
   position: fixed;
