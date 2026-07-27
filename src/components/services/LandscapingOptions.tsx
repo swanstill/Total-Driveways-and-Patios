@@ -18,21 +18,6 @@ const options = [
     desc: "Replace worn or uneven ground with prepared turf, or discuss low-maintenance alternatives where natural lawn is not appropriate for the space.",
     image: "/gallery-4.jpeg",
   },
-  {
-    title: "Fencing & Boundaries",
-    desc: "Improve privacy and security with fencing selected to suit the property, exposure and required maintenance — with posts and levels that coordinate with the landscaping.",
-    image: "/gallery-5.jpeg",
-  },
-  {
-    title: "Walls, Edging & Raised Beds",
-    desc: "Use walls, setts, kerbs or sleepers to retain levels, define beds and create structure — with materials that work alongside the paving and the house.",
-    image: "/patios.jpg",
-  },
-  {
-    title: "Drainage & Site Improvements",
-    desc: "Address water movement, muddy areas, uneven access and poorly placed hard surfaces as part of the overall landscaping plan.",
-    image: "/gallery-3.jpeg",
-  },
 ];
 
 const fadeUp = {
