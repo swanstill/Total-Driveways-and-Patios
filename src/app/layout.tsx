@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Sora, Inter, Manrope, Playfair_Display } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import MobileCTA from "@/components/MobileCTA";
+import ServiceMobileCTA from "@/components/services/ServiceMobileCTA";
 import "./globals.css";
 
 const sora = Sora({
@@ -53,7 +53,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        <MobileCTA />
+        <ServiceMobileCTA />
       </body>
     </html>
   );

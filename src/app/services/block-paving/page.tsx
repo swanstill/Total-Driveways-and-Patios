@@ -13,8 +13,6 @@ import ServiceTestimonials from "@/components/services/ServiceTestimonials";
 import FAQ from "@/components/FAQ";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import ServiceFinalCTA from "@/components/services/ServiceFinalCTA";
-import ServiceMobileCTA from "@/components/services/ServiceMobileCTA";
-
 export default function BlockPavingPage() {
   useEffect(() => {
     // Add .service-page class to body for CSS variable scoping
@@ -36,7 +34,6 @@ export default function BlockPavingPage() {
       <FAQ />
       <QuoteFormSection />
       <ServiceFinalCTA />
-      <ServiceMobileCTA />
     </div>
   );
 }

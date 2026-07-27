@@ -13,8 +13,6 @@ import ServiceTestimonials from "@/components/services/ServiceTestimonials";
 import FAQ from "@/components/FAQ";
 import QuoteFormSection from "@/components/QuoteFormSection";
 import ServiceFinalCTA from "@/components/services/ServiceFinalCTA";
-import ServiceMobileCTA from "@/components/services/ServiceMobileCTA";
-
 export default function PatiosPage() {
   useEffect(() => {
     document.body.classList.add("service-page");
@@ -35,7 +33,6 @@ export default function PatiosPage() {
       <FAQ />
       <QuoteFormSection />
       <ServiceFinalCTA />
-      <ServiceMobileCTA />
     </div>
   );
 }
