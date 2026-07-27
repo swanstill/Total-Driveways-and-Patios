@@ -7,7 +7,7 @@ const slides = [
   { before: "/tarmac-before.jpg", after: "/tarmac-after.jpg", label: "Tarmac Driveways" },
   { before: "/patios-before.jpg", after: "/patios-after.jpg", label: "Patios" },
   { before: "/resin-before.jpg", after: "/resin-after.jpg", label: "Resin Driveways" },
-  { before: "/landscaping-before.jpg", after: "/landscaping-after.jpg", label: "Landscaping" },
+  { before: "/landscaping-after.jpg", after: "/landscaping-before.jpg", label: "Landscaping" },
 ];
 
 function BeforeAfterSlider({ before, after, label }: { before: string; after: string; label: string }) {
