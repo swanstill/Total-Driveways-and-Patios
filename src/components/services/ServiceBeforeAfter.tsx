@@ -106,7 +106,7 @@ export default function ServiceBeforeAfter() {
               }}
             >
               <svg viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" className="w-[18px] h-[18px]">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7M9 5l7 7-7 7" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M17 9l4 4-4 4M7 15l-4-4 4-4" />
               </svg>
             </div>
 
