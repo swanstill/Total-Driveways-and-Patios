@@ -57,7 +57,7 @@ Submitted via totaldrivewaysandpatiosltd.co.uk
 `;
 
     const { error } = await resend.emails.send({
-      from: "Quote Form <onboarding@resend.dev>",
+      from: "Total Driveways & Patios <info@totaldrivewaysandpatiosltd.co.uk>",
       to: "info@totaldrivewaysandpatiosltd.co.uk",
       replyTo: data.email || undefined,
       subject: `New Quote Request from ${data.name} — ${data.helpWith}`,
