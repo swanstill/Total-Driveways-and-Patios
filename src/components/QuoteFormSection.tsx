@@ -143,9 +143,28 @@ export default function QuoteFormSection() {
     }
     setConsentError("");
     setSubmitting(true);
-    // TODO: Replace with real API call
-    await new Promise((r) => setTimeout(r, 2000));
-    console.log("Form submitted:", data);
+
+    try {
+      const res = await fetch("/api/send-quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) {
+        const errData = await res.json().catch(() => ({}));
+        console.error("Send failed:", errData);
+        alert("Something went wrong sending your quote. Please try again or call us on 07722 151 231.");
+        setSubmitting(false);
+        return;
+      }
+    } catch (err) {
+      console.error("Network error:", err);
+      alert("Could not connect. Please check your internet or call us on 07722 151 231.");
+      setSubmitting(false);
+      return;
+    }
+
     setSubmitting(false);
     setSubmitted(true);
     document.getElementById("quote-form-section")?.scrollIntoView({ behavior: "smooth", block: "start" });

@@ -34,9 +34,44 @@ export default function ServiceQuoteForm() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, this would send to an API endpoint
+    setSubmitting(true);
+
+    try {
+      const res = await fetch("/api/send-quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          helpWith: "Block Paving",
+          existingSurface: "Not specified",
+          areaSize: "Not specified",
+          timeline: "Not specified",
+          postcode: form.postcode,
+          message: form.message,
+          name: form.name,
+          phone: form.phone,
+          email: form.email,
+          consent: true,
+        }),
+      });
+
+      if (!res.ok) {
+        const errData = await res.json().catch(() => ({}));
+        console.error("Send failed:", errData);
+        alert("Something went wrong sending your quote. Please try again or call us on 07722 151 231.");
+        setSubmitting(false);
+        return;
+      }
+    } catch (err) {
+      console.error("Network error:", err);
+      alert("Could not connect. Please check your internet or call us on 07722 151 231.");
+      setSubmitting(false);
+      return;
+    }
+
     setSubmitted(true);
   };
 
@@ -197,10 +232,11 @@ export default function ServiceQuoteForm() {
               <motion.div custom={5} variants={fadeUp} className="md:col-span-2">
                 <button
                   type="submit"
-                  className="w-full font-bold text-[16px] px-8 py-4 rounded-[12px] transition-all"
+                  disabled={submitting}
+                  className="w-full font-bold text-[16px] px-8 py-4 rounded-[12px] transition-all disabled:opacity-60"
                   style={{ background: "var(--svc-gold)", color: "#fff", boxShadow: "0 8px 28px -6px rgba(200,155,74,0.45)" }}
                 >
-                  Request Free Quote
+                  {submitting ? "Sending..." : "Request Free Quote"}
                 </button>
                 <p className="text-[12px] mt-3 text-center" style={{ color: "rgba(15,39,71,0.4)" }}>
                   No obligation. We&apos;ll respond within 24 hours.
