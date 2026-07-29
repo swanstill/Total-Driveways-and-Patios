@@ -1,6 +1,14 @@
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST,
+  port: Number(process.env.SMTP_PORT) || 587,
+  secure: Number(process.env.SMTP_PORT) === 465,
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+});
 
 interface QuotePayload {
   helpWith: string;
@@ -56,21 +64,13 @@ ${data.message ? `NOTES\n──────────────\n${data.mess
 Submitted via totaldrivewaysandpatiosltd.co.uk
 `;
 
-    const { error } = await resend.emails.send({
-      from: "Total Driveways & Patios <info@totaldrivewaysandpatiosltd.co.uk>",
+    await transporter.sendMail({
+      from: `"Total Driveways & Patios" <${process.env.SMTP_FROM || "info@totaldrivewaysandpatiosltd.co.uk"}>`,
       to: "info@totaldrivewaysandpatiosltd.co.uk",
       replyTo: data.email || undefined,
       subject: `New Quote Request from ${data.name} — ${data.helpWith}`,
       text: emailBody,
     });
-
-    if (error) {
-      console.error("Resend error:", error);
-      return Response.json(
-        { error: "Failed to send email" },
-        { status: 500 },
-      );
-    }
 
     return Response.json({ success: true });
   } catch (err) {
