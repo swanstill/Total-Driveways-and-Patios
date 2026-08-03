@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Resin Driveways Barnsley | Total Driveways & Patios",
   description:
-    "Expert resin-bound and resin-bonded driveway installation across Barnsley and South Yorkshire. SUDS-compliant, UV-stable, low maintenance. Free quotes. Call 07722 151231.",
+    "Expert resin-bound and resin-bonded driveway installation across Barnsley and South Yorkshire. SUDS-compliant, UV-stable, low maintenance. Free quotes. Call 0800 994 9855.",
   alternates: { canonical: "https://totaldrivewaysandpatios.co.uk/services/resin-driveways" },
   openGraph: {
     title: "Resin Driveways Barnsley | Total Driveways & Patios",

@@ -4,7 +4,7 @@ export default function MobileCTA() {
       <a href="#quote" className="btn btn-primary flex-1 justify-center !py-[12px] !px-[18px] !text-sm">
         Get a free quote
       </a>
-      <a href="tel:07722151231" className="btn btn-outline flex-1 justify-center !py-[12px] !px-[18px] !text-sm">
+      <a href="tel:08009949855" className="btn btn-outline flex-1 justify-center !py-[12px] !px-[18px] !text-sm">
         Call now
       </a>
     </div>

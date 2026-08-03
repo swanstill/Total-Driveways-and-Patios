@@ -66,7 +66,7 @@ Submitted via totaldrivewaysandpatiosltd.co.uk
 
     await transporter.sendMail({
       from: `"Total Driveways & Patios" <${process.env.SMTP_FROM || "info@totaldrivewaysandpatiosltd.co.uk"}>`,
-      to: "swanstill.fa@gmail.com",
+      to: "info@totaldrivewaysandpatiosltd.co.uk",
       replyTo: data.email || undefined,
       subject: `New Quote Request from ${data.name} — ${data.helpWith}`,
       text: emailBody,

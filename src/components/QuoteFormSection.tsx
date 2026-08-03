@@ -128,11 +128,14 @@ export default function QuoteFormSection() {
 
   const goBack = useCallback(() => {
     if (step > 0) {
-      prevValues.current = "";
+      // Sync prevValues so auto-advance doesn't immediately re-advance
+      const prevStep = step - 1;
+      const fields = requiredFields[prevStep] ?? [];
+      prevValues.current = JSON.stringify(fields.map((f) => watched[f]));
       setStep((s) => s - 1);
       document.getElementById("quote-form-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  }, []);
+  }, [step, watched]);
 
   /* ── Submit ── */
   const onSubmit = async (data: FormValues) => {
@@ -194,7 +197,7 @@ export default function QuoteFormSection() {
               </p>
               <div className="flex flex-wrap justify-center gap-3 mt-8">
                 <a
-                  href="tel:07722151231"
+                  href="tel:08009949855"
                   className="inline-flex items-center gap-2 h-[52px] px-6 rounded-[14px] font-bold text-[15px] text-white bg-navy-primary hover:bg-deep-blue transition-all duration-200 shadow-[0_8px_24px_-6px_rgba(15,39,71,0.35)]"
                 >
                   <svg className="w-[18px] h-[18px]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -203,7 +206,7 @@ export default function QuoteFormSection() {
                   Call now
                 </a>
                 <a
-                  href="https://wa.me/4407722151231"
+                  href="https://wa.me/4408009949855"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 h-[52px] px-6 rounded-[14px] font-bold text-[15px] text-white bg-[#25D366] hover:bg-[#1DA851] transition-all duration-200 shadow-[0_8px_24px_-6px_rgba(37,211,102,0.35)]"

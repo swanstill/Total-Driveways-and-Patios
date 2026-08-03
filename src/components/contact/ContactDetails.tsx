@@ -7,15 +7,15 @@ const contactItems = [
   {
     icon: Phone,
     label: "Phone",
-    value: "07722 151231",
-    href: "tel:07722151231",
+    value: "0800 994 9855",
+    href: "tel:08009949855",
     highlight: true,
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
     value: "Message us on WhatsApp",
-    href: "https://wa.me/4407722151231",
+    href: "https://wa.me/4408009949855",
     highlight: false,
   },
   {

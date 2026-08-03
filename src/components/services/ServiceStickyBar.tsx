@@ -31,11 +31,11 @@ export default function ServiceStickyBar() {
             Request Quote
           </Link>
           <Link
-            href="tel:07722151231"
+            href="tel:08009949855"
             className="text-[13px] font-semibold px-5 py-1.5 rounded-[8px] transition-all"
             style={{ border: "1px solid rgba(255,255,255,0.2)", color: "rgba(255,255,255,0.85)" }}
           >
-            Call 07722 151231
+            Call 0800 994 9855
           </Link>
         </div>
       </div>

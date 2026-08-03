@@ -57,7 +57,7 @@ export default function ServiceFooter() {
             <h3 className="text-[17px] font-bold !text-white mb-4">Contact</h3>
             <ul className="space-y-2.5 text-[13.5px]" style={{ color: "rgba(255,255,255,0.55)" }}>
               <li>
-                <Link href="tel:07722151231" className="transition-all hover:text-white">07722 151231</Link>
+                <Link href="tel:08009949855" className="transition-all hover:text-white">0800 994 9855</Link>
               </li>
               <li>
                 <span>Serving Barnsley &amp;<br />South Yorkshire</span>

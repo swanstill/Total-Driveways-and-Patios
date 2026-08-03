@@ -42,7 +42,7 @@ export default function Footer() {
           <div>
             <h5 className="text-white font-heading text-sm tracking-[.06em] uppercase mb-[18px]">Contact</h5>
             <ul className="space-y-[11px] text-sm">
-              <li><a href="tel:07722151231" className="hover:text-white transition-colors">07722 151231</a></li>
+              <li><a href="tel:08009949855" className="hover:text-white transition-colors">0800 994 9855</a></li>
               <li>Barnsley &amp; South Yorkshire</li>
               <li>Mon–Fri, 8am–5pm</li>
             </ul>

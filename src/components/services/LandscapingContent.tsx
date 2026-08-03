@@ -217,8 +217,8 @@ export default function LandscapingContent() {
                 <Link href="#quote" className="block w-full text-center font-bold text-[15px] px-6 py-3.5 rounded-[12px] transition-all hover:brightness-110 mb-3" style={{ background: "var(--svc-gold)", color: "#fff" }}>
                   Request a Free Quote
                 </Link>
-                <Link href="tel:07722151231" className="block w-full text-center font-semibold text-[14px] px-6 py-3 rounded-[12px] transition-all" style={{ border: "1px solid rgba(255,255,255,0.15)", color: "rgba(255,255,255,0.7)" }}>
-                  Call 07722 151231
+                <Link href="tel:08009949855" className="block w-full text-center font-semibold text-[14px] px-6 py-3 rounded-[12px] transition-all" style={{ border: "1px solid rgba(255,255,255,0.15)", color: "rgba(255,255,255,0.7)" }}>
+                  Call 0800 994 9855
                 </Link>
                 <div className="mt-6 pt-6 text-center" style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}>
                   <div className="flex justify-center gap-[2px] mb-2" style={{ color: "var(--svc-gold)" }}>

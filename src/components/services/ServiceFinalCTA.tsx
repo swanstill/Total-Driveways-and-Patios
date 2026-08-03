@@ -66,14 +66,14 @@ export default function ServiceFinalCTA() {
               </svg>
             </Link>
             <Link
-              href="tel:07722151231"
+              href="tel:08009949855"
               className="inline-flex items-center gap-2.5 font-bold text-[14px] px-[18px] py-3 rounded-[6px] transition-all"
               style={{ border: "2px solid rgba(255,255,255,0.25)", color: "#fff" }}
             >
               <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="w-[17px] h-[17px]">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.2 3.6a1 1 0 01-.27 1.05L7.7 9.79a11 11 0 006.5 6.5l1.46-1.46a1 1 0 011.05-.27l3.6 1.2a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.61 21 3 14.39 3 6V5z" />
               </svg>
-              Call 07722 151231
+              Call 0800 994 9855
             </Link>
           </motion.div>
         </motion.div>

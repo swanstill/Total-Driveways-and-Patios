@@ -133,7 +133,7 @@ export default function ContactHero() {
             {/* Phone & Email Row */}
             <motion.div variants={fadeUp} className="flex flex-wrap gap-6 mb-10">
               <a
-                href="tel:07722151231"
+                href="tel:08009949855"
                 className="flex items-center gap-3 text-[16px] font-bold transition-all hover:opacity-80"
                 style={{ color: "var(--color-navy-primary, #0F2747)" }}
               >
@@ -151,7 +151,7 @@ export default function ContactHero() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.2 3.6a1 1 0 01-.27 1.05L7.7 9.79a11 11 0 006.5 6.5l1.46-1.46a1 1 0 011.05-.27l3.6 1.2a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.61 21 3 14.39 3 6V5z" />
                   </svg>
                 </span>
-                07722 151231
+                0800 994 9855
               </a>
               <a
                 href="mailto:info@totaldriveways.co.uk"
@@ -203,7 +203,7 @@ export default function ContactHero() {
                 Request a Free Quote
               </Link>
               <a
-                href="https://wa.me/4407722151231"
+                href="https://wa.me/4408009949855"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 font-bold text-[14px] px-[18px] py-3 rounded-[6px] transition-all hover:bg-navy/5"

@@ -767,11 +767,11 @@ function CoverageCheckerCard({ isInView }: { isInView: boolean }) {
 
         {/* Phone button */}
         <a
-          href="tel:07722151231"
+          href="tel:08009949855"
           className="mt-3 w-full btn btn-outline !justify-center !py-[12px] !px-[18px] !text-sm !rounded-md"
         >
           <Phone className="w-[18px] h-[18px]" strokeWidth={1.5} />
-          Call 07722 151231
+          Call 0800 994 9855
         </a>
       </div>
     </motion.div>

@@ -31,7 +31,7 @@ export default function ServiceTestimonials() {
   const prev = () => setActive((a) => (a - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <section className="py-[120px]" style={{ background: "#fff" }}>
+    <section id="reviews" className="py-[120px]" style={{ background: "#fff" }}>
       <div className="max-w-[1280px] mx-auto px-6">
         {/* Heading */}
         <motion.div

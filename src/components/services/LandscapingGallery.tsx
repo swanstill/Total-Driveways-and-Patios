@@ -11,7 +11,7 @@ const projects = [
 
 export default function LandscapingGallery() {
   return (
-    <section className="py-[120px]" style={{ background: "var(--svc-section)" }}>
+    <section id="gallery" className="py-[120px]" style={{ background: "var(--svc-section)" }}>
       <div className="max-w-[1280px] mx-auto px-6">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center max-w-[680px] mx-auto mb-16">
           <motion.span custom={0} variants={{ hidden: { opacity: 0, y: 20 }, visible: (i) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: i * 0.1 } }) }} className="text-[11px] font-bold tracking-[0.22em] uppercase" style={{ color: "var(--svc-gold)" }}>

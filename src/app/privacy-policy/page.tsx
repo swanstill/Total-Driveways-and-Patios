@@ -277,8 +277,8 @@ export default function PrivacyPolicyPage() {
             <p className="text-[15px] leading-relaxed mb-1">Barnsley, South Yorkshire</p>
             <p className="text-[15px] leading-relaxed mb-1">
               <strong style={{ color: "var(--svc-heading)" }}>Phone:</strong>{" "}
-              <a href="tel:07722151231" className="underline underline-offset-2 hover:no-underline" style={{ color: "var(--svc-gold)" }}>
-                07722 151231
+              <a href="tel:08009949855" className="underline underline-offset-2 hover:no-underline" style={{ color: "var(--svc-gold)" }}>
+                0800 994 9855
               </a>
             </p>
             <p className="text-[15px] leading-relaxed">

@@ -11,7 +11,7 @@ const projects = [
 
 export default function TarmacGallery() {
   return (
-    <section className="py-[120px]" style={{ background: "var(--svc-section)" }}>
+    <section id="gallery" className="py-[120px]" style={{ background: "var(--svc-section)" }}>
       <div className="max-w-[1280px] mx-auto px-6">
         {/* Heading */}
         <motion.div

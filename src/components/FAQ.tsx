@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: "What areas do you cover?",
-    a: "The confirmed primary area is [PRIMARY AREA], with surrounding coverage to be listed as [SURROUNDING AREAS]. Customers can submit their postcode or call 07722 151231 to check availability.",
+    a: "The confirmed primary area is [PRIMARY AREA], with surrounding coverage to be listed as [SURROUNDING AREAS]. Customers can submit their postcode or call 0800 994 9855 to check availability.",
   },
 ];
 

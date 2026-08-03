@@ -19,11 +19,11 @@ export default function Hero() {
               </svg>
               Get a free quote
             </a>
-            <a href="tel:07722151231" className="btn btn-outline !py-[12px] !px-[18px] !text-sm !rounded-md">
+            <a href="tel:08009949855" className="btn btn-outline !py-[12px] !px-[18px] !text-sm !rounded-md">
               <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="w-[17px] h-[17px] flex-shrink-0">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.2 3.6a1 1 0 01-.27 1.05L7.7 9.79a11 11 0 006.5 6.5l1.46-1.46a1 1 0 011.05-.27l3.6 1.2a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.61 21 3 14.39 3 6V5z" />
               </svg>
-              Call 07722 151231
+              Call 0800 994 9855
             </a>
           </div>
           <div className="flex gap-6 flex-wrap items-center text-sm font-semibold text-navy-soft">
